@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center"
+              android:orientation="vertical"
+              android:padding="15dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/desc_twostep"/>
+
+    <EditText
+        android:id="@+id/edtPassword"
+        style="@style/AppTheme.EditText.Iconic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/hint_password"
+        android:inputType="textPassword"
+        android:singleLine="true"
+        android:textColor="@color/colorAccent"
+        />
+
+    <TextView
+        android:id="@+id/btnForgot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginTop="10dp"
+        android:text="@string/forgot_password"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="65dp"
+        android:background="@drawable/get_start_register_btn"
+        android:enabled="true"
+        android:minWidth="221dp"
+        android:text="@string/btn_login"
+        android:textAllCaps="true"
+        android:textColor="@android:color/white"/>
+</LinearLayout>

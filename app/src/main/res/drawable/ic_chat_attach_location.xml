@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Created by Collect-up  on December 27, 2016.
+  ~
+  ~ This is the source code of C-Up v1.0
+  ~
+  ~ Copyright (c) 2016 C-Up. All rights reserved.
+  -->
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/ic_chat_map_marker_pressed" android:state_pressed="true" />
+    <item android:drawable="@drawable/ic_chat_map_marker" />
+</selector>

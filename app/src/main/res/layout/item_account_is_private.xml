@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Created by Collect-up  on December 27, 2016.
+  ~
+  ~ This is the source code of C-Up v1.0
+  ~
+  ~ Copyright (c) 2016 C-Up. All rights reserved.
+  -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="70dp"
+        android:drawablePadding="10dp"
+        android:drawableTop="@drawable/item_private"
+        android:gravity="center"
+        android:text="@string/account_is_private"
+        android:textColor="@color/divider" />
+</RelativeLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  ~ Created by Collect-up  on December 27, 2016.
+  ~
+  ~ This is the source code of C-Up v1.0
+  ~
+  ~ Copyright (c) 2016 C-Up. All rights reserved.
+  -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="vertical">
+
+
+    <ImageView
+        android:id="@+id/image_view_picture"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/placeholder"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="right|bottom"
+        android:background="@color/suggestion_background"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imgBusinessLevel"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/businesslevel_gold"/>
+
+        <TextView
+            android:id="@+id/text_view_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:lines="1"
+            android:maxLines="1"
+            android:padding="4dp"
+            android:text="New Text"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_desc"/>
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_map_marker_accent"
+            android:tint="@color/snackbar_color"/>
+
+        <TextView
+            android:id="@+id/txtDistance"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:paddingRight="5dp"
+            android:text="99 km"
+            android:textColor="@color/snackbar_color"
+            android:textSize="@dimen/text_subtitle"/>
+
+
+    </LinearLayout>
+    <!--  <FrameLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center_horizontal|bottom"
+          android:alpha="0.6"
+          android:background="@android:color/black"
+          android:padding="4dp">
+  -->
+
+
+    <!--
+        </FrameLayout>
+    -->
+</FrameLayout>

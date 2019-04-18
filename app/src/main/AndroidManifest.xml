@@ -1,0 +1,574 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Created by Collect-up  on December 27, 2016.
+  ~
+  ~ This is the source code of C-Up v1.0
+  ~
+  ~ Copyright (c) 2016 C-Up. All rights reserved.
+-->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"
+          package="com.collect_up.c_up">
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+
+    <protected-broadcast android:name="android.intent.action.MEDIA_MOUNTED"/>
+
+    <!-- Required for chat activity, opening emoji window -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.PROCESS_INCOMING_CALLS"/>
+
+    <uses-feature
+        android:name="android.hardware.camera2"
+        android:required="false"/>
+    <uses-feature
+        android:name="android.hardware.camera.front"
+        android:required="false"/>
+    <uses-feature
+        android:name="android.hardware.camera.flash"
+        android:required="false"/>
+    <uses-feature
+        android:name="android.hardware.location"
+        android:required="true"/>
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:fullBackupContent="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="false"
+        android:theme="@style/AppTheme"
+        tools:replace="android:icon,android:theme,android:label">
+        <activity
+            android:name=".activities.ActivityHome"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/SplashTheme"
+            android:windowSoftInputMode="adjustPan">
+
+            <intent-filter>
+
+                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="android.intent.action.SEARCH"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+
+
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+
+                <!--
+                                <data android:mimeType="text/plain"/>
+                -->
+                <data android:mimeType="video/*"/>
+                <data android:mimeType="image/*"/>
+
+            </intent-filter>
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable"/>
+        </activity>
+        <activity
+            android:name=".activities.ActivityExplore"
+            android:label="@string/tab_explore"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".fragments.FragmentHashTags"
+            android:label="@string/hashtags"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activities.GetStartActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity
+            android:name=".activities.FragmentComplexEventNew"
+            android:label="@string/new_event"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeDoneDiscardActivity"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity
+            android:name=".activities.ActivityChangeLanguage"
+            android:label="@string/change_language"
+            android:parentActivityName=".fragments.FragmentPersonEdit"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activities.FragmentComplexManagerAdd"
+            android:label="@string/add_manager"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeDoneDiscardActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity
+            android:name=".activities.FragmentPersonPostDisplay"
+            android:label="@string/post"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activities.ActivityGalleryPager"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".fragments.FragmentComplexBusinessAdd"
+            android:label="@string/add_shop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH"/>
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable"/>
+        </activity>
+        <activity
+            android:name=".fragments.FragmentChatContacts"
+            android:label="@string/contacts"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH"/>
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable"/>
+        </activity>
+        <activity
+            android:name=".fragments.FragmentPreferences"
+            android:label="@string/settings"
+            android:screenOrientation="portrait"
+            android:theme="@style/PreferenceScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.PREFERENCE"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".fragments.PrefFragmentManageNotifications"
+            android:label="@string/pref_manage_notifications"
+            android:screenOrientation="portrait"
+            android:theme="@style/PreferenceScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.PREFERENCE"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".fragments.PrefFragmentAccountPrivacy"
+            android:label="@string/pref_account_privacy"
+            android:screenOrientation="portrait"
+            android:theme="@style/PreferenceScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.PREFERENCE"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".fragments.PrefFragmentTwoStep"
+            android:label="@string/pref_twosteps"
+            android:screenOrientation="portrait"
+            android:theme="@style/PreferenceScreen"
+            android:windowSoftInputMode="adjustResize|adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.PREFERENCE"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".fragments.PrefFragmentSessionManager"
+            android:label="@string/pref_session_manager"
+            android:screenOrientation="portrait"
+            android:theme="@style/PreferenceScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.PREFERENCE"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".fragments.FragmentFollowAndDeny"
+            android:label="@string/contacts"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|adjustResize"/>
+        <activity
+            android:name=".activities.ActivityMultipleCropper"
+            android:label="@string/multi_cropper"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".fragments.FragmentPersonEdit"
+            android:label="@string/action_update_info"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeDoneDiscardActivity"
+            android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <!-- <activity
+             android:name=".activities.FragmentSearch"
+             android:label="@string/app_name"
+             android:launchMode="singleTop"
+             android:screenOrientation="portrait"
+             android:theme="@style/AppThemeWithoutActivityAnimation"
+             android:windowSoftInputMode="adjustPan">
+             <intent-filter>
+                 <action android:name="android.intent.action.SEARCH"/>
+             </intent-filter>
+
+             <meta-data
+                 android:name="android.app.searchable"
+                 android:resource="@xml/searchable"/>
+         </activity>-->
+        <activity
+            android:name=".activities.FragmentBusinessPostNew"
+            android:label="@string/new_post"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeDoneDiscardActivity"/>
+        <activity
+            android:name=".activities.FragmentComplexPostNew"
+            android:label="@string/new_post"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeDoneDiscardActivity"/>
+        <activity
+            android:name=".activities.FragmentPersonPostNew"
+            android:label="@string/new_post"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeDoneDiscardActivity">
+            <!--<intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+
+                <data android:mimeType="text/plain"/>
+                <data android:mimeType="video/*"/>
+                <data android:mimeType="image/*"/>
+            </intent-filter>-->
+        </activity>
+        <activity
+            android:name=".fragments.FragmentProductNew"
+            android:label="@string/new_product"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeDoneDiscardActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity
+            android:name=".fragments.FragmentProductProfile"
+            android:label="@string/product_profile"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".fragments.FragmentProductEdit"
+            android:label="@string/edit_product"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeDoneDiscardActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity
+            android:name=".fragments.FragmentManagerAdd"
+            android:label="@string/add_manager"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeDoneDiscardActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity
+            android:name=".fragments.FragmentManageStickers"
+            android:label="@string/stickers"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity
+            android:name=".fragments.FragmentAllStickers"
+            android:label="@string/all_stickers"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity
+            android:name=".fragments.FragmentEventNew"
+            android:label="@string/new_event"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeDoneDiscardActivity"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity
+            android:name=".fragments.FragmetBusinessComplexAdd"
+            android:label="@string/add_complex"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH"/>
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable"/>
+        </activity>
+        <activity
+            android:name=".fragments.FragmentComplex"
+            android:label="@string/complex"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".fragments.FragmentComplexNew"
+            android:label="@string/new_complex"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeDoneDiscardActivity"
+            android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity
+            android:name=".activities.ActivityPickLocation"
+            android:label="@string/pick_location"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".fragments.FragmentPerson"
+            android:label="@string/profile"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".fragments.FragmentDisplayFollowersNFollowing"
+            android:label="@string/following_followers"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".fragments.FragmentTwoStepEnable"
+            android:label="@string/pref_twosteps"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".fragments.FragmnetTwoStepEnter"
+            android:label="@string/pref_twosteps"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".fragments.FragmentBusiness"
+            android:label="@string/business"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <!--<activity-->
+        <!--android:name=".activities.FragmentConversations"-->
+        <!--android:label="@string/conversations"-->
+        <!--android:launchMode="singleTop"-->
+        <!--android:screenOrientation="portrait"-->
+        <!--android:theme="@style/AppThemeWithoutActivityAnimation"/>-->
+        <activity
+            android:name=".activities.FragmentComplexPostEdit"
+            android:label="@string/post_edit"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeDoneDiscardActivity"/>
+        <activity
+            android:name=".activities.FragmentBusinessPostEdit"
+            android:label="@string/post_edit"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeDoneDiscardActivity"/>
+        <activity
+            android:name=".activities.FragmentBusinessPostDisplay"
+            android:label="@string/post"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activities.FragmentComplexPostDisplay"
+            android:label="@string/post"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activities.FragmentPersonPostEdit"
+            android:label="@string/post_edit"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeDoneDiscardActivity"/>
+        <activity
+            android:name=".fragments.FragmentBusinessNew"
+            android:label="@string/new_shop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeDoneDiscardActivity"
+            android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity
+            android:name=".fragments.FragmentComplexEdit"
+            android:label="@string/action_update_info"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeDoneDiscardActivity"
+            android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity
+            android:name=".fragments.FragmentBusinessEdit"
+            android:label="@string/action_update_info"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeDoneDiscardActivity"
+            android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity
+            android:name=".fragments.FragmentPostLikes"
+            android:label="@string/post_likes"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".fragments.FragmentFindPeople"
+            android:label="@string/find_people"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH"/>
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable"/>
+        </activity>
+        <activity
+            android:name="com.yalantis.ucrop.UCropFragment"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"/>
+        <activity
+            android:name=".fragments.FragmentChat"
+            android:label="@string/chat"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity
+            android:name="me.nereo.multi_image_selector.MultiImageSelectorActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.desmond.squarecamera.CameraActivity"
+            android:screenOrientation="portrait"/>
+
+        <receiver
+            android:name=".receivers.SmsReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter android:priority="9999">
+                <action android:name="android.provider.Telephony.SMS_RECEIVED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".receivers.CallReceiver">
+            <intent-filter android:priority="999">
+                <action android:name="android.intent.action.PHONE_STATE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".receivers.RealtimeReceiver"/>
+        <receiver android:name=".receivers.LocationReceiver"/>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version"/>
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/GOOGLE_GEO_API_KEY"/>
+
+        <service
+            android:name=".services.DirectSharingService"
+            android:label="@string/app_name"
+            android:permission="android.permission.BIND_CHOOSER_TARGET_SERVICE">
+            <intent-filter>
+                <action android:name="android.service.chooser.ChooserTargetService"/>
+            </intent-filter>
+        </service>
+        <service
+            android:name=".services.RealtimeService"
+            android:exported="false"/>
+        <service
+            android:name=".services.Location"
+            android:exported="false"/>
+        <service
+            android:name=".services.CheckInternetConnectivity"
+            android:exported="false"/>
+
+        <activity
+            android:name=".fragments.FragmentGroupChat"
+            android:label="@string/title_activity_group_chat"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity
+            android:name=".fragments.FragmentShare"
+            android:label="@string/title_activity_share"
+            android:screenOrientation="portrait">
+            <!--      <intent-filter>
+                      <action android:name="android.intent.action.SEND"/>
+
+                      <category android:name="android.intent.category.DEFAULT"/>
+
+                      <data android:mimeType="text/plain"/>
+                      <data android:mimeType="video/*"/>
+                      <data android:mimeType="image/*"/>
+                  </intent-filter>-->
+            <intent-filter>
+                <action android:name="com.collect_up.c_up.ShareActivity"/>
+
+                <category android:name="android.intent.category.APP_MESSAGING"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".fragments.FragmentGroupChatInit"
+            android:label="@string/title_activity_group_chat_init"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeDoneDiscardActivity"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity
+            android:name=".fragments.FragmentGroupChatInfo"
+            android:label="@string/title_activity_group_chat_info"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".fragments.FragmentBlockedList"
+            android:label="@string/title_activity_blocked_list"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".fragments.FragmentDeniedList"
+            android:label="@string/title_activity_denied_list"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activities.ActivityImageViewer"
+            android:label="@string/title_activity_display_image"
+            android:screenOrientation="portrait"
+            android:theme="@style/DisplayImageActivity"/>
+        <activity
+            android:name=".activities.ActivityUnCaughtException"
+            android:label="@string/title_activity_un_caught_exception"
+            android:process=":uncaught_exception_process"
+            android:screenOrientation="portrait"
+            android:theme="@style/UnCaughtExceptionActivity">
+            <intent-filter>
+                <action android:name="com.collect_up.c_up.UnCaughtExceptionActivity"/>
+            </intent-filter>
+        </activity>
+        <!--<activity
+            android:name=".activities.FragmentNotifications"
+            android:label="@string/title_activity_notifications"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeWithoutActivityAnimation"/>-->
+        <activity
+            android:name=".fragments.FragmentRequests"
+            android:label="@string/title_activity_requests"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeWithoutActivityAnimation"/>
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="1a7e77e4c4a72c34f4aecf599122083a5c83aec6"/>
+
+        <activity android:name=".activities.BaseActivity"/>
+        <activity android:name=".activities.ActivityVideoPlayer"/>
+    </application>
+
+</manifest>

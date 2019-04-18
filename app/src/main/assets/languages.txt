@@ -1,0 +1,132 @@
+Abkhaz/
+Adyghe/
+Afrikaans/
+Akan/
+Albanian/
+American Sign Language/
+Amharic/
+Ancient Greek/
+Arabic/
+Aragonese/
+Armenian/
+Aymara/
+Balinese/
+Basque/
+Betawi/
+Bosnian/
+Breton/
+Bulgarian/
+Cantonese/
+Catalan/
+Cherokee/
+Chickasaw/
+Chinese/
+Coptic/
+Cornish/
+Corsican/
+Crimean Tatar/
+Croatian/
+Czech/
+Danish/
+Dawro/
+Dutch/
+English/
+Esperanto/
+Estonian/
+Ewe/
+Fiji Hindi/
+Filipino/
+Finnish/
+French/
+Galician/
+Georgian/
+German/
+Greek, Modern/
+Greenlandic/
+Haitian Creole/
+Hawaiian/
+Hebrew/
+Hindi/
+Hungarian/
+Icelandic/
+Indonesian/
+Interlingua/
+Inuktitut/
+Irish/
+Italian/
+Japanese/
+Kabardian/
+Kannada/
+Kashubian/
+Khmer/
+Kinyarwanda/
+Korean/
+Kurdish/Kurdî/
+Ladin/
+Latgalian/
+Latin/
+Lingala/
+Livonian/
+Lojban/
+Low German/
+Lower Sorbian/
+Macedonian/
+Malay/
+Malayalam/
+Mandarin/
+Manx/
+Maori/
+Mauritian Creole/
+Min Nan/
+Mongolian/
+Norwegian/
+Old Armenian/
+Old English/
+Old French/
+Old Norse/
+Old Prussian/
+Oriya/
+Pangasinan/
+Papiamentu/
+Pashto/
+Persian/
+Pitjantjatjara/
+Polish/
+Portuguese/
+Proto-Slavic/
+Rapa Nui/
+Romanian/
+Russian/
+Sanskrit/
+Scots/
+Scottish Gaelic/
+Serbian/
+Serbo-Croatian/
+Sina Bidoyoh/
+Sinhalese/
+Slovak/
+Slovene/
+Spanish/
+Swahili/
+Swedish/
+Tagalog/
+Tajik/
+Tamil/
+Tarantino/
+Telugu/
+Thai/
+Tok Pisin/
+Turkish/
+Twi/
+Ukrainian/
+Upper Sorbian/
+Urdu/
+Uzbek/
+Venetian/
+Vietnamese/
+Vilamovian/
+Volapük/
+Võro/
+Welsh/
+Xhosa/
+Yiddish/

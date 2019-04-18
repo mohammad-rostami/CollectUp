@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Created by Collect-up  on December 27, 2016.
+  ~
+  ~ This is the source code of C-Up v1.0
+  ~
+  ~ Copyright (c) 2016 C-Up. All rights reserved.
+  -->
+
+<com.marshalchen.ultimaterecyclerview.UltimateRecyclerView
+    android:id="@+id/recycler_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/alpha_background"
+    xmlns:android="http://schemas.android.com/apk/res/android"/>

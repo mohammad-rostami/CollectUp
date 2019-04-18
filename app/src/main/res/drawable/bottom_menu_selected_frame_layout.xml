@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Created by Collect-up  on December 27, 2016.
+  ~
+  ~ This is the source code of C-Up v1.0
+  ~
+  ~ Copyright (c) 2016 C-Up. All rights reserved.
+  -->
+
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:top="0dp">
+        <shape
+            android:shape="rectangle">
+            <stroke
+                android:width="8dp"
+                android:color="@color/primary_dark"/>
+            <solid android:color="@color/primary_dark"/>
+        </shape>
+    </item>
+
+</layer-list>

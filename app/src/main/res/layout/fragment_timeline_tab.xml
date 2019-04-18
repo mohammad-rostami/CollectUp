@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Created by Collect-up  on December 27, 2016.
+  ~
+  ~ This is the source code of C-Up v1.0
+  ~
+  ~ Copyright (c) 2016 C-Up. All rights reserved.
+  -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+    <LinearLayout
+
+        android:id="@+id/rootLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <com.collect_up.c_up.util.ComplexAvatarView
+                android:id="@+id/image_view_picture"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                app:cav_textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+                app:cav_textColor="@android:color/white"
+                app:cav_textSize="20sp">
+
+            </com.collect_up.c_up.util.ComplexAvatarView>
+
+            <TextView
+                android:id="@+id/text_view_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:layout_marginStart="7dp"
+                android:gravity="left|center_vertical"
+                android:text="New Text"
+                android:textColor="@color/primary_text"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"/>
+
+
+            <Button
+                android:id="@+id/btnFollow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:background="@android:color/transparent"
+                android:gravity="center_vertical"
+                android:text="@string/follow"
+                android:textColor="@color/colorAccent"
+                android:textSize="10sp"/>
+            <!--
+                                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                    -->
+            <TextView
+                android:id="@+id/text_view_datetime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3m"
+                android:textColor="@color/divider"/>
+            <!--
+                        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+            -->
+            <ImageButton
+                android:id="@+id/btnOverflow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_action_navigation_more_vert"/>
+
+        </LinearLayout>
+
+
+        <FrameLayout
+            android:id="@+id/image_cc"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible">
+
+            <io.github.meness.timelinepostcontainer.TimelinePostContainer xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                                          android:id="@+id/timelinePostContainer"
+                                                                          android:layout_width="match_parent"
+                                                                          android:layout_height="match_parent"
+                                                                          android:background="@android:color/black"
+                                                                          android:fitsSystemWindows="false"/>
+
+            <FrameLayout
+                android:id="@+id/peopleHolder"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/btnTag"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="bottom"
+                    android:layout_margin="7dp"
+                    android:background="@drawable/background_close_circle"
+                    android:padding="7dp"
+                    android:src="@drawable/ic_person_white_18dp"
+                    android:visibility="visible"/>
+            </FrameLayout>
+
+            <View
+                android:id="@+id/vBgLike"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_like_circle_background"/>
+
+            <ImageView
+                android:id="@+id/ivLike"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="@null"
+                android:scaleType="center"
+                android:src="@drawable/ic_heart_outline"
+                android:visibility="gone"/>
+        </FrameLayout>
+
+
+        <com.ms.square.android.expandabletextview.ExpandableTextView xmlns:android="http://schemas.android.com/apk/res/android"
+                                                                     xmlns:expandableTextView="http://schemas.android.com/apk/res-auto"
+                                                                     android:id="@+id/expand_text_view"
+                                                                     android:layout_width="match_parent"
+                                                                     android:layout_height="wrap_content"
+                                                                     android:layout_marginTop="6dp"
+                                                                     expandableTextView:maxCollapsedLines="6">
+
+            <TextView
+                android:id="@+id/expandable_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textColor="#666666"/>
+
+            <ImageButton
+                android:id="@+id/expand_collapse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|bottom"
+                android:background="@android:color/transparent"
+                android:contentDescription="@null"
+                android:padding="10dp"/>
+        </com.ms.square.android.expandabletextview.ExpandableTextView>
+
+        <ImageView
+            android:id="@+id/image_view_feed_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@null"/>
+
+        <LinearLayout
+            android:id="@+id/linear_layout_footer_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp">
+
+            <ImageButton
+                android:id="@+id/image_button_like_small"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/content_description_like_post"
+                android:padding="10dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_heart_outline"
+                android:tag="false"/>
+
+            <ImageButton
+                android:id="@+id/image_button_comments"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@drawable/btn_feed_action"
+                android:contentDescription="@string/content_description_post_comment"
+                android:padding="10dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_comment_text_outline"/>
+
+            <TextView
+                android:id="@+id/text_view_total_comments"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="-8dp"
+                android:layout_marginRight="8dp"
+
+                android:gravity="center"
+                android:text="6k"/>
+
+            <ImageButton
+                android:id="@+id/image_button_more"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@drawable/btn_feed_action"
+                android:contentDescription="@string/content_description_open_more"
+                android:padding="10dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_share"/>
+
+            <TextView
+                android:id="@+id/txtViews"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:drawablePadding="5dp"
+                android:drawableRight="@drawable/ic_remove_red_eye_grey_600_24dp"
+                android:gravity="right|center_vertical"
+                android:text="180"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
+                android:textColor="@color/secondary_text"
+                android:textSize="@dimen/text_desc"/>
+
+            <LinearLayout
+                android:id="@+id/linear_layout_post_likes"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:gravity="center_vertical|end"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:contentDescription="@null"
+                    android:src="@drawable/ic_heart"
+                    android:tint="@color/colorAccent"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/text_view_likes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginStart="8dp"
+                    android:text="0"
+                    android:textColor="@color/text_like_counter"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginStart="3dp"
+                    android:text="likes"
+                    android:textColor="@color/text_like_counter"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height=".5dp"
+        android:layout_below="@+id/rootLayout"
+        android:background="@color/divider"/>
+</RelativeLayout>

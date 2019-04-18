@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Created by Collect-up  on December 27, 2016.
+  ~
+  ~ This is the source code of C-Up v1.0
+  ~
+  ~ Copyright (c) 2016 C-Up. All rights reserved.
+  -->
+
+<searchable xmlns:android="http://schemas.android.com/apk/res/android"
+            android:hint="@string/hint_search"
+            android:icon="@drawable/ic_search_white"
+            android:imeOptions="actionSearch"
+            android:inputType="textCapSentences|text"
+            android:label="@string/search" />

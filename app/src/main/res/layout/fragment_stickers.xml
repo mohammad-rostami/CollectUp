@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Created by Collect-up  on December 27, 2016.
+  ~
+  ~ This is the source code of C-Up v1.0
+  ~
+  ~ Copyright (c) 2016 C-Up. All rights reserved.
+  -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+    >
+
+    <com.rey.material.widget.Button
+
+        android:id="@+id/btnAllStickers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:background="@color/default_white"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:gravity="left|center_vertical"
+        android:padding="15dp"
+        android:text="@string/all_stickers"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/primary_text"/>
+
+    <TextView
+        android:id="@+id/txtSection"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_below="@+id/btnAllStickers"
+        android:background="#e1e1e1"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:text="@string/my_stickers"
+        android:textAllCaps="true"
+        android:textColor="@color/secondary_text"
+        android:textSize="12sp"
+        android:textStyle="bold"/>
+
+
+    <com.marshalchen.ultimaterecyclerview.UltimateRecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
+                                                               android:id="@+id/recycler_view"
+                                                               android:layout_width="match_parent"
+                                                               android:layout_height="match_parent"
+                                                               android:layout_below="@+id/txtSection"
+                                                               android:background="@color/default_white"
+                                                               app:recyclerviewEmptyView="@layout/empty_list_view"/>
+
+</RelativeLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/reuse_toolbar_fixed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"/>
+
+    <FrameLayout
+        android:id="@+id/fragmentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        >
+
+    </FrameLayout>
+
+    <!--   <android.support.v4.view.ViewPager
+           android:id="@+id/view_pager"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:layout_below="@+id/toolbar"
+           android:layout_marginBottom="@dimen/bottonbar_size"
+           />-->
+
+    <include
+        android:id="@+id/layout_bottom_menu"
+        layout="@layout/reuse_bottom_menu"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bottonbar_size"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>

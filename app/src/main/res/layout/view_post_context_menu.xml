@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Created by Collect-up  on December 27, 2016.
+  ~
+  ~ This is the source code of C-Up v1.0
+  ~
+  ~ Copyright (c) 2016 C-Up. All rights reserved.
+  -->
+
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <Button
+        android:id="@+id/btnReport"
+        style="@style/ContextMenuButton"
+        android:text="@string/report"
+        android:textColor="@color/btn_context_menu_text_red"/>
+
+    <Button
+        android:id="@+id/btnShareOnProfile"
+        style="@style/ContextMenuButton"
+        android:text="@string/share_on_profile"/>
+
+    <Button
+        android:id="@+id/btnShareToChats"
+        style="@style/ContextMenuButton"
+        android:text="@string/share_to_chats"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#eeeeee"/>
+
+    <Button
+        android:id="@+id/btnReject"
+        style="@style/ContextMenuButton"
+        android:text="@string/cancel"/>
+
+</merge>

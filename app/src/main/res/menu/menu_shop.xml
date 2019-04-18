@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Created by Collect-up  on December 27, 2016.
+  ~
+  ~ This is the source code of C-Up v1.0
+  ~
+  ~ Copyright (c) 2016 C-Up. All rights reserved.
+  -->
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:context=".ShopActivity">
+
+    <group android:id="@+id/menu_group_hide">
+        <item
+            android:id="@+id/action_share"
+            android:icon="@drawable/ic_action_share"
+            android:title="@string/action_share"
+            app:showAsAction="ifRoom"/>
+        <item
+            android:id="@+id/action_new_event"
+            android:title="@string/action_new_event"
+            app:showAsAction="never"/>
+
+        <item
+            android:id="@+id/action_add_product"
+            android:title="@string/action_add_product"
+            app:showAsAction="never"/>
+
+        <item
+            android:id="@+id/action_add_post"
+            android:title="@string/action_add_post"
+            app:showAsAction="never"/>
+
+        <item
+            android:id="@+id/action_add_complex"
+            android:title="@string/action_add_complex"
+            app:showAsAction="never"/>
+
+        <item
+            android:id="@+id/action_add_manager"
+            android:title="@string/action_add_manager"
+            app:showAsAction="never"/>
+        <item
+            android:id="@+id/action_set_admin"
+            android:title="@string/action_set_admin"
+            app:showAsAction="never"/>
+        <item
+            android:id="@+id/action_edit"
+            android:title="@string/action_update_info"
+            app:showAsAction="never"/>
+
+        <item
+            android:id="@+id/action_delete"
+            android:title="@string/action_delete"
+            app:showAsAction="never"/>
+
+        <item
+            android:id="@+id/action_chat"
+            android:icon="@drawable/ic_message_text_24"
+            android:title="@string/action_send_message"
+            app:showAsAction="ifRoom"/>
+    </group>
+</menu>

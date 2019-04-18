@@ -1,0 +1,30 @@
+<!--
+  ~ Created by Collect-up  on December 27, 2016.
+  ~
+  ~ This is the source code of C-Up v1.0
+  ~
+  ~ Copyright (c) 2016 C-Up. All rights reserved.
+  -->
+
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_padding">10dp</dimen>
+    <dimen name="reuse_toolbar_with_background_tablayout">350dp</dimen>
+    <dimen name="grid_spacing">0.5dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="list_padding">6dp</dimen>
+    <dimen name="bottonbar_size">49dp</dimen>
+    <dimen name="padding">1dp</dimen>
+    <dimen name="text_desc">14sp</dimen>
+    <dimen name="text_subtitle">9sp</dimen>
+    <dimen name="text_title">11sp</dimen>
+    <dimen name="text_rate">40sp</dimen>
+    <dimen name="padding_list">10dp</dimen>
+    <dimen name="post_header">58dp</dimen>
+    <dimen name="text_size_small">14sp</dimen>
+    <dimen name="text_size_medium">18sp</dimen>
+    <dimen name="text_size_large">22sp</dimen>
+
+</resources>

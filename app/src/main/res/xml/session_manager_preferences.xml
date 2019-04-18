@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Created by Collect-up  on December 27, 2016.
+  ~
+  ~ This is the source code of C-Up v1.0
+  ~
+  ~ Copyright (c) 2016 C-Up. All rights reserved.
+  -->
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="@string/pref_session_manager">
+    <PreferenceCategory
+        android:key="currentSession"
+        android:layout="@layout/preference_category"
+        android:title="@string/current_session">
+
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:key="activeSession"
+        android:layout="@layout/preference_category"
+        android:title="@string/active_sessions">
+
+
+    </PreferenceCategory>
+</PreferenceScreen>

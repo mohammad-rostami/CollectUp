@@ -1,0 +1,161 @@
+<!--
+  ~ Created by Collect-up  on December 27, 2016.
+  ~
+  ~ This is the source code of C-Up v1.0
+  ~
+  ~ Copyright (c) 2016 C-Up. All rights reserved.
+  -->
+
+<com.collect_up.c_up.view.chat.SizeNotifierRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                          xmlns:tools="http://schemas.android.com/tools"
+                                                          android:id="@+id/chat_layout"
+                                                          android:layout_width="match_parent"
+                                                          android:layout_height="match_parent"
+                                                          tools:context=".fragments.FragmentChat">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/reuse_toolbar_chat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"/>
+
+    <ListView
+        android:id="@+id/list_view_chats"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp"
+        android:layout_marginTop="?attr/actionBarSize"
+
+        android:divider="@drawable/chat_divider"
+        android:listSelector="@android:color/transparent"
+    />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/white"
+        android:clickable="true"
+        android:gravity="bottom"
+        android:minHeight="50dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/linear_layout_chat_bottom_container_removed_from_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:clickable="true"
+            android:gravity="bottom"
+            android:minHeight="50dp"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/text_view_removed_from_group_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/you_removed_from_group"
+                android:textColor="@color/colorAccent"
+                android:textSize="18sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_layout_chat_bottom_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:gravity="center_vertical"
+            android:minHeight="50dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/image_view_emoji"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_gravity="bottom"
+                android:contentDescription="@string/content_description_add_emoji"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:src="@drawable/ic_msg_panel_smiles"
+                android:tag="emoji"/>
+
+            <ImageView
+                android:id="@+id/imgStickers"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_gravity="bottom"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:src="@drawable/ic_sticker"
+                android:tag="stickers"/>
+
+            <EditText
+                android:id="@+id/edit_text_message"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@drawable/chat_textbox"
+                android:hint="@string/type_your_message"
+                android:inputType="textCapSentences|textMultiLine"
+                android:maxLines="4"
+                android:minHeight="45dp"
+                android:padding="6dp"
+                android:scrollHorizontally="false"
+                android:singleLine="false"
+                android:textColor="@android:color/black"
+                android:textCursorDrawable="@null"
+                android:textSize="18sp"/>
+
+            <ImageView
+                android:id="@+id/image_view_attach"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_gravity="bottom"
+                android:contentDescription="@string/content_description_attach_file"
+                android:paddingEnd="13dp"
+                android:paddingLeft="13dp"
+                android:paddingRight="13dp"
+                android:paddingStart="13dp"
+                android:src="@drawable/ic_attach_file"/>
+
+            <ImageView
+                android:id="@+id/image_view_send"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_gravity="bottom"
+                android:contentDescription="@string/content_description_send_message"
+                android:paddingEnd="13dp"
+                android:paddingLeft="13dp"
+                android:paddingRight="13dp"
+                android:paddingStart="13dp"
+                android:src="@drawable/ic_chat_send"
+                android:tint="@color/colorAccent"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_layout_empty_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/linear_layout_chat_bottom_container"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/chat_settings"
+            android:text="@string/no_messages_here"
+            android:textAppearance="@style/chat_settings"/>
+    </LinearLayout>
+
+</com.collect_up.c_up.view.chat.SizeNotifierRelativeLayout>

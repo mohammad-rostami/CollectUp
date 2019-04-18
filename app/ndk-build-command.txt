@@ -1,0 +1,1 @@
+C:\Users\aessh\AppData\Local\Android\android-ndk-r10\ndk-build NDK_APPLICATION_MK=jni/Application.mk APP_BUILD_SCRIPT=jni/Android.mk

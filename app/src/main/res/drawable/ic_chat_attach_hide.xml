@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Created by Collect-up  on December 27, 2016.
+  ~
+  ~ This is the source code of C-Up v1.0
+  ~
+  ~ Copyright (c) 2016 C-Up. All rights reserved.
+  -->
+
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:gravity="center">
+        <selector>
+            <item
+                android:drawable="@drawable/attach_hide1_pressed"
+                android:state_pressed="true" />
+            <item android:drawable="@drawable/attach_hide1" />
+        </selector>
+    </item>
+    <item>
+        <bitmap
+            android:gravity="center"
+            android:src="@drawable/attach_hide2" />
+    </item>
+</layer-list>

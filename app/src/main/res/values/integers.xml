@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Created by Collect-up  on December 27, 2016.
+  ~
+  ~ This is the source code of C-Up v1.0
+  ~
+  ~ Copyright (c) 2016 C-Up. All rights reserved.
+  -->
+
+<resources>
+    <integer name="text_edit_name_max_length">30</integer>
+    <integer name="edit_text_area_code_max_length">3</integer>
+    <integer name="edit_text_activation_code_max_length">4</integer>
+    <integer name="map_zoom_far">14</integer>
+    <integer name="map_zoom_near">16</integer>
+</resources>

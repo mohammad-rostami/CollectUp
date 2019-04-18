@@ -1,0 +1,10 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.collect_up.c_up.postviewerlib">
+
+    <application
+        android:label="@string/app_name"
+       >
+
+    </application>
+
+</manifest>

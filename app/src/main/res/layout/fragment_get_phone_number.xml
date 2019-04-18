@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Created by Collect-up  on December 27, 2016.
+  ~
+  ~ This is the source code of C-Up v1.0
+  ~
+  ~ Copyright (c) 2016 C-Up. All rights reserved.
+  -->
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:drawablePadding="20dp"
+            android:drawableTop="@drawable/ic_logo_blue"
+            android:gravity="center"
+            android:text="@string/verify_phone_number_title"
+            android:textColor="@color/colorAccent"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/activity_padding">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/text_view_confirm_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/confirm_code_text"/>
+
+                <Spinner
+                    android:id="@+id/auto_complete_text_view_countries"
+                    android:layout_width="213dp"
+                    android:paddingLeft="42dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/text_view_confirm_text"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/spinner_category"
+                    android:hint="@string/hint_choose_your_country"
+                    android:imeOptions="flagNoExtractUi|actionSearch"
+                    android:inputType="textCapSentences"
+                    android:textColor="@android:color/black"/>
+
+                <com.rey.material.widget.ProgressView
+                    android:id="@+id/progress_bar_loading"
+                    style="?android:attr/progressBarStyleSmall"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/auto_complete_text_view_countries"
+                    android:layout_gravity="center_vertical|end"
+                    android:visibility="gone"
+                    app:pv_autostart="true"
+                    app:pv_circular="true"
+                    app:pv_progressMode="indeterminate"
+                    app:pv_progressStyle="@style/Material.Drawable.CircularProgress"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/auto_complete_text_view_countries"
+                    android:layout_marginTop="15dp"
+                    android:layout_toLeftOf="@+id/edit_text_phone_number"
+                    android:layout_toStartOf="@+id/edit_text_phone_number"
+                    android:gravity="start|bottom"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="+"/>
+
+                    <EditText
+                        android:id="@+id/edit_text_area_code"
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:enabled="false"
+                        android:inputType="number"
+                        android:maxLength="@integer/edit_text_area_code_max_length"
+                        android:singleLine="true"
+                        android:textColor="@android:color/black"/>
+
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/edit_text_phone_number"
+                    style="@style/AppTheme.EditText.Iconic"
+                    android:layout_width="213dp"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/auto_complete_text_view_countries"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="15dp"
+                    android:drawableLeft="@drawable/ic_phone_edit_text"
+                    android:hint="@string/hint_phone_number"
+                    android:inputType="number"
+                    android:maxLength="@integer/text_edit_name_max_length"
+                    android:singleLine="true"
+                    android:textColor="@android:color/black"/>
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/button_register"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="45dp"
+                android:background="@color/button_get_start_background2"
+                android:minWidth="221dp"
+                android:text="@string/ok"
+                android:textColor="@android:color/white"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

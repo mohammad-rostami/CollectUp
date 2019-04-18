@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Created by Collect-up  on December 27, 2016.
+  ~
+  ~ This is the source code of C-Up v1.0
+  ~
+  ~ Copyright (c) 2016 C-Up. All rights reserved.
+  -->
+
+<com.collect_up.c_up.view.chat.SizeNotifierRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                          xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                          android:id="@+id/postLayout"
+                                                          android:layout_width="match_parent"
+                                                          android:layout_height="match_parent"
+                                                          android:keepScreenOn="true">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/reuse_toolbar_fixed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"/>
+
+    <FrameLayout
+        android:id="@+id/frameHolder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:background="@color/default_white">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:orientation="vertical"
+                android:padding="@dimen/activity_padding">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.collect_up.c_up.util.ComplexAvatarView
+                        android:id="@+id/image_view_picture"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="5dp"
+                        android:contentDescription="@null"
+                        android:src="@drawable/placeholder"
+                        app:cav_textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+                        app:cav_textColor="@android:color/white"
+                        app:cav_textSize="15sp"/>
+
+                    <com.collect_up.c_up.view.CustomEditText
+                        android:id="@+id/edit_text_post_body"
+                        style="@style/Edittext.withoutLine"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginLeft="5dp"
+                        android:ems="10"
+                        android:gravity="top"
+                        android:hint="@string/hint_post_body"
+                        android:inputType="textMultiLine"
+                        android:minLines="1"
+                        android:textColor="@android:color/black"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@color/divider"
+                    android:paddingLeft="7dp"
+                    android:paddingRight="7dp"/>
+
+                <FrameLayout
+                    android:id="@+id/linear_layout_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:orientation="vertical">
+                    <!-- An empty ViewGroup to add a child programmatically. -->
+
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/alpha_background_button"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <ImageButton
+                        android:id="@+id/image_button_insert_image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        android:background="@drawable/border_right_white"
+                        android:contentDescription="@string/content_description_insert_image"
+                        android:src="@drawable/ic_camera_white"/>
+
+                    <ImageButton
+                        android:id="@+id/image_button_insert_video"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        android:background="@null"
+                        android:contentDescription="@string/content_description_insert_video"
+                        android:src="@drawable/ic_video"/>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <fragment xmlns:tools="http://schemas.android.com/tools"
+                  android:id="@+id/fragmentSuggestionlist"
+                  android:name="com.collect_up.c_up.fragments.FragmentMention"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:layout_marginBottom="48dp"
+                  android:background="@color/dialog_background"
+                  android:visibility="gone"
+                  tools:layout="@layout/fragment_tabs"/>
+    </FrameLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/btnInsert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="18dp"
+        android:clickable="true"
+        android:src="@drawable/ic_plus"/>
+
+
+</com.collect_up.c_up.view.chat.SizeNotifierRelativeLayout>

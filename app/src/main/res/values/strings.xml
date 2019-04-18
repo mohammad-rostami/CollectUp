@@ -1,0 +1,593 @@
+<!--
+  ~ Created by Collect-up  on December 27, 2016.
+  ~
+  ~ This is the source code of C-Up v1.0
+  ~
+  ~ Copyright (c) 2016 C-Up. All rights reserved.
+  -->
+
+<resources xmlns:xliff="http://schemas.android.com/tools">
+    <string name="permission_title">Permission required</string>
+    <string name="permission_camera">Camera permission is needed to take a picture</string>
+    <string name="permission_storage">Storage permission is needed to take/save a file from/in storage</string>
+    <string name="permission_contact">Contact permission is needed to get contact details to follow them</string>
+    <string name="permission_gps">GPS permission is needed to get your location in and show on map</string>
+    <string name="permission_calls_sms">Calls and SMS permissions are needed to send message or call for activating</string>
+    <string name="expired_session">Your session has been expired, you must login again to app </string>
+    <string name="warning">Warning!</string>
+    <string name="request_accept">Are you sure to accept?</string>
+    <string name="request_reject">Are you sure to reject?</string>
+    <string name="request_button_sure">Yes, sure</string>
+    <string name="dialog_complex">What is the Complex?</string>
+    <string name="dialog_business">What is the Business?</string>
+    <string name="dialog_invite">Please invite your friends for join to collect-up </string>
+    <string name="dialog_set_admin">You won\'t be admin anymore, Are you sure to change administration? </string>
+    <string name="business_desc">Register your business in business room easily for free. Locate your company, organization or shop with using the GPS.</string>
+    <string name="complex_desc">Commercial complexes, shop malls, business with branches and business with same activity can create the complex and add the business members into it.</string>
+    <string name="app_name">Collect-Up</string>
+    <string name="tag_desc">Tagging the Products or Business will help the other users to find your product/services or business,easily</string>
+    <string name="action_search">Search</string>
+    <string name="action_new_chat">New Chat</string>
+    <string name="search_for_shops">Search for businesses</string>
+    <string name="search_for_complex">Search for complex</string>
+    <string name="male">Male</string>
+    <string name="alert_message_pick_location">If you don\'t set your location,the users may not see your product in the nearest places,do you want this?</string>
+    <string name="alert_title_pick_location">Warning!</string>
+    <string name="alert_positive_pick_location">Yes</string>
+    <string name="alert_negetive_pick_location">No</string>
+    <string name="stickers">Stickers</string>
+
+    <string name="female">Female</string>
+    <string name="add_manager">Edit Managers</string>
+    <string name="job">Job</string>
+    <string name="languages">Languages</string>
+    <string name="change_language">Change Language</string>
+    <string name="add_shop">Add Business</string>
+    <string name="contacts">Contacts</string>
+    <string name="multi_cropper">Setting</string>
+    <string name="following">Following</string>
+    <string name="add_complex">Add Complex</string>
+    <string name="action_done">Done</string>
+    <string name="new_event">New Event</string>
+    <string name="hint_name">Name</string>
+    <string name="hint_username">Username</string>
+    <string name="hint_email_address">Email address</string>
+    <string name="action_edit">Edit</string>
+    <string name="action_send_message">Send Message</string>
+    <string name="send">Send</string>
+
+    <string name="action_delete">Delete</string>
+    <string name="new_complex">New Complex</string>
+    <string name="pick_location">Pick Location</string>
+    <string name="new_shop">New Business</string>
+    <string name="pref_version">Collect-Up for Android v%1$s</string>
+    <string name="activation_sent">Your activation code will send to %1$s. Please wait a moment to receive the code.</string>
+    <string name="hint_activation_code">Code</string>
+    <string name="get_start">Get Start</string>
+    <string name="check">Check</string>
+    <string name="register">Register</string>
+    <string name="content_description_cup_logo">Collect-Up logo</string>
+    <string name="content_description_open_profile">Open profile activity.</string>
+    <string name="content_description_open_home">Open home activity.</string>
+    <string name="content_description_open_chat">Open chat activity.</string>
+    <string name="content_description_open_shop">Open business activity.</string>
+    <string name="content_description_insert_image">Insert image(s).</string>
+    <string name="content_description_insert_video">Insert video(s).</string>
+    <string name="content_description_like_post">Like post.</string>
+    <string name="hint_phone_number">Phone number</string>
+    <string name="invalid_phone_number">Invalid phone number</string>
+    <string name="tag">Tag People</string>
+
+    <string name="hint_choose_your_country">Choose your country</string>
+    <string name="invalid_activation_code">Invalid activation code</string>
+    <string name="whats_cup">We want to tie virtual into the real world.</string>
+    <string name="welcome_to_cup">Welcome to Collect-Up</string>
+    <string name="dialog_choose_photo_title">Choose Action</string>
+    <string name="toast_update_profile_failed">Updating profile has failed</string>
+    <string name="toast_new_complex_failed">Creating new complex has failed</string>
+    <string name="hint_address">Address</string>
+    <string name="hint_description">Description</string>
+    <string name="hint_presentation_code">Presentation code</string>
+    <string name="toast_edit_complex_failed">Editing the complex has failed</string>
+    <string name="toast_edit_shop_failed">Editing business has failed</string>
+    <string name="toast_new_shop_failed">Creating new business has failed</string>
+    <string name="toast_set_password_twostep_failed">Set password has failed please try again</string>
+    <string name="toast_change_pass_twostep_failed">Change password has failed please try again</string>
+    <string name="toast_set_email_twostep_failed">Set email address has failed please try again</string>
+    <string name="no_entries">No data yet…!</string>
+    <string name="invite_from_sms">%1$s just invited you to join Collect-Up. Download for free at
+        %2$s
+    </string>
+    <string name="invite_friends">Invite Friends</string>
+    <string name="set_admin">Set Admin</string>
+    <string name="requests">Requests</string>
+    <string name="follow">Follow</string>
+    <string name="search_for_managers">Search for managers</string>
+    <string name="post_likes">Post Likes</string>
+    <string name="followers">Followers</string>
+    <string name="toast_error_updating_complex">Error in updating the complex</string>
+    <string name="action_add_manager">Edit Managers</string>
+    <string name="managers">Managers</string>
+    <string name="action_set_admin">Set Admin</string>
+    <string name="toast_error_updating_shop">Error in updating the business</string>
+    <string name="toast_error_forgotpass_twostep">Error in reset your password</string>
+    <string name="toast_error_enter_twostep">Incorrect password</string>
+    <string name="action_new_event">New Event</string>
+    <string name="are_you_sure">Are you sure?</string>
+    <string name="im_sure">I\'m sure!</string>
+    <string name="cancel">Cancel</string>
+    <string name="toast_error_deleting_shop">Error in deleting the business</string>
+    <string name="action_add_shops">Add Businesses</string>
+    <string name="action_add_complex">Add Complex</string>
+    <string name="action_add_product">Add Product</string>
+    <string name="action_add_post">Add Post</string>
+    <string name="toast_error_deleting_complex">Error in deleting the complex</string>
+    <string name="hint_post_body">What\'s in your mind?</string>
+    <string name="toast_error_posting_post">Error in posting the post</string>
+    <string name="toast_upload_pdf_failed">Uploading File has failed</string>
+    <string name="toast_upload_video_failed">Uploading video has failed</string>
+    <string name="toast_upload_failed_exceeds_max_size">Uploading has failed because it exceeds the
+        max size
+    </string>
+    <string name="new_product">New Product</string>
+    <string name="content_description_add_new_file">Add new file.</string>
+    <string name="choose_action">Choose Action</string>
+    <string name="add_media">Add media(s)</string>
+    <string name="add_video">Add video</string>
+    <string name="take_picture">Take picture</string>
+
+    <string name="toast_error_updating_product">Error in updating the product</string>
+    <string name="toast_error_posting_product">Error in posting the product</string>
+    <string name="edit_product">Edit Product</string>
+    <string name="hint_extra_properties">Extra properties</string>
+    <string name="tooltip_price">Price</string>
+    <string name="text_view_votes">Votes</string>
+    <string name="product_profile">Product Profile</string>
+    <string name="toast_error_updating_rate">Error in updating the rate</string>
+    <string name="content_description_open_extra_properties_dialog">Open extra properties of this
+        product.
+    </string>
+    <string name="extra_properties">Extra Properties</string>
+    <string name="tab_timeline">Timeline</string>
+    <string name="tab_info">Info</string>
+    <string name="toast_error_following">Error in following</string>
+    <string name="unfollow">Unfollow</string>
+    <string name="toast_error_unfollowing">Error in unfollowing</string>
+    <string name="toast_error_like">Error in liking the post</string>
+    <string name="toast_successful_report">Reported successfully</string>
+    <string name="toast_error_report">Error in reporting</string>
+    <string name="from_gallery">From gallery</string>
+    <string name="remove_picture">Remove</string>
+    <string name="action_report">Report</string>
+    <string name="toast_error_deleting_post">Error in deleting the post</string>
+    <string name="hint_type_comment">Type your comment…</string>
+    <string name="content_description_post_comment">Post your comment.</string>
+    <string name="toast_error_editing_post">Error in editing the post</string>
+    <string name="just_now">Just now</string>
+    <string name="post_edit">Post Edit</string>
+    <string name="toast_error_post_comment">Error in posting the comment</string>
+    <string name="tab_products">Products</string>
+    <string name="tab_events">Events</string>
+    <string name="business">Business</string>
+    <string name="following_followers">Followers/Following</string>
+    <string name="want_to_delete_comment">Do you really want to delete your comment?</string>
+    <string name="toast_error_deleting_comment">Error in deleting the comment</string>
+    <string name="snack_error_occurred">Couldn\'t refreshing feed</string>
+    <string name="try_again">Try again</string>
+    <string name="to">to</string>
+    <string name="label_rates2">Rates</string>
+    <string name="content_description_add">Add anything.</string>
+    <string name="content_description_open_more">Open more context.</string>
+    <string name="display_location">Display Location</string>
+    <string name="new_post">New Post</string>
+    <string name="title_tag_people">Tag People</string>
+    <string name="toast_error_upload_image_failed">Uploading image has failed</string>
+    <string name="set_as_default">The image set as default</string>
+    <string name="upload_an_image">An image is required</string>
+    <string name="tab_shops">Business</string>
+    <string name="complex">Complex</string>
+    <string name="event">Event</string>
+    <string name="hint_search">Search…</string>
+    <string name="hint_new_cat">Category name</string>
+    <string name="toast_error_mute">Error in muting the profile</string>
+    <string name="toast_error_deny">Error in deny the profile</string>
+    <string name="toast_error_tag_people">This user already tagged</string>
+    <string name="search">Search</string>
+    <string name="action_filter">Filter Search</string>
+    <string name="product">Product</string>
+    <string name="filter_by">Filter by:</string>
+    <string name="top_rate">Top rate</string>
+    <string name="top_view">Top view</string>
+    <string name="none">None</string>
+    <string name="search_in">Search in</string>
+    <string name="title_new_cat">New category</string>
+    <string name="ok">OK</string>
+    <string name="set_location">Set Location</string>
+    <string name="nearest">Nearest</string>
+    <string name="no_thanks">No thanks</string>
+    <string name="requested">Requested</string>
+
+    <string name="type_your_message">Message…</string>
+    <string name="NoRecent">No recent</string>
+    <string name="chat">Chat</string>
+    <string name="current_session">Current session</string>
+    <string name="active_sessions">Active sessions</string>
+    <string name="add">Add</string>
+
+    <string name="content_description_send_message">Send your message.</string>
+    <string name="content_description_add_emoji">Add some emojis.</string>
+    <string name="action_block">Block</string>
+    <string name="action_block_user">Block user</string>
+    <string name="conversations">Chit-Chat</string>
+    <string name="online">Online</string>
+    <string name="last_seen">Last seen %s</string>
+    <string name="action_clear_history">Clear history</string>
+    <string name="content_description_add_new_shop">Add new business.</string>
+    <string name="content_description_add_new_complex">Add new complex.</string>
+    <string name="content_description_add_new_event">Add new event.</string>
+    <string name="am">AM</string>
+    <string name="pm">PM</string>
+    <string name="yesterday">Yesterday</string>
+    <string name="something_went_wrong">Oops! Something went wrong.</string>
+    <string name="content_description_attach_file">Attach files.</string>
+    <string name="camera">Camera</string>
+    <string name="gallery">Gallery</string>
+    <string name="video">Video</string>
+    <string name="file">File</string>
+    <string name="no_messages_here">No messages here yet…</string>
+    <string name="notification_chats_messages">%1$d new messages in %2$d chats.</string>
+    <string name="notification_chats_messages_one_chat">%1$d new messages.</string>
+
+    <plurals name="days_ago">
+        <item quantity="one">%d day ago</item>
+        <item quantity="other">%d days ago</item>
+    </plurals>
+
+    <plurals name="members">
+        <item quantity="one">%d member</item>
+        <item quantity="other">%d members</item>
+    </plurals>
+    <string name="set_rate">Please enter your rate:</string>
+    <string name="title_activity_group_chat">Group Chat</string>
+    <string name="toast_error_deleting_chat">Error in deleting chat.</string>
+    <string name="today">Today</string>
+    <string name="is_typing">is typing…</string>
+    <string name="content_description_add_new_post">Add new post.</string>
+    <string name="content_description_add_new_product">Add new product.</string>
+    <string name="post">Post</string>
+    <string name="tab_explore">Explore</string>
+    <string name="hashtags">Hashtags</string>
+    <string name="shops_are_limited_for_you">Businesses are limited for you.</string>
+    <string name="complexes_are_limited_for_you">Complexes are limited for you.</string>
+    <string name="image">IMAGE</string>
+    <string name="video_message">VIDEO</string>
+    <string name="no_app_to_handle_intent">There is no application to handle your request.</string>
+    <string name="title_activity_share">Select a Conversation</string>
+    <string name="no_extra_sent">No extra data sent.</string>
+    <string name="message">Message</string>
+    <string name="forward">Forward</string>
+    <string name="copy">Copy</string>
+    <string name="delete">Delete</string>
+    <string name="action_new_group">New Group</string>
+    <string name="title_activity_group_chat_init">New Group</string>
+    <string name="hint_enter_group_name">Enter group name</string>
+    <string name="toast_error_create_new_chat">Error in creating the chat.</string>
+    <string name="toast_error_minimum_group_member">Minimum members of a group chat is 2.</string>
+    <string name="toast_message_deleted">The message deleted.</string>
+    <string name="toast_message_copied">The message copied.</string>
+    <string name="title_activity_group_chat_info">Group Chat Info</string>
+    <string name="action_add_member">Add member</string>
+    <string name="action_edit_group_name">Edit name</string>
+    <string name="action_delete_leave">Leave and delete </string>
+    <string name="choose_new_name">Change Group Name</string>
+    <string name="save">Save</string>
+    <string name="add_member">Add member</string>
+    <string name="delete_leave_title">Delete And Leave Group</string>
+    <string name="toast_error_contact_already_in_group">Already a member of this group.</string>
+    <string name="action_change_picture">Change picture</string>
+    <string name="remove_from_group_title">Remove from Group</string>
+    <string name="sure_to_remove_member_from_group">Are you sure to remove the member from this group?</string>
+    <string name="you_removed_from_group">You removed from group</string>
+    <string name="unblock">Unblock</string>
+    <string name="action_unblock_user">Unblock user</string>
+    <string name="title_activity_blocked_list">Block List</string>
+    <string name="unblock_contact_title">Unblock user</string>
+    <string name="sure_to_unblock_contact">Are you sure to unblock the user?</string>
+    <string name="toast_error_unblocking">Error in unblocking.</string>
+    <string name="action_block_list">Block List</string>
+    <string name="sure_to_delete_and_leave_group">Are you sure to delete and leave this group?</string>
+    <string name="sure_to_delete_chat">Are you sure to delete this chat?</string>
+    <string name="delete_chat_title">Delete Chat</string>
+    <string name="action_delete_chat">Delete Chat</string>
+    <string name="you_dont_have_any_shops">You have no businesses.</string>
+    <string name="file_size_should_be_smaller">File size should be less than 20MB.</string>
+    <string name="unknown_file_type">Unknown file type.</string>
+    <string name="block_contact_title">Block user</string>
+    <string name="sure_to_block_contact">Are you sure to block this user?</string>
+    <string name="a_minute_ago">1 minute ago</string>
+    <string name="x_minutes_ago">%1$d minutes ago</string>
+    <string name="x_hours_ago">%1$d hours ago</string>
+    <string name="an_hour_ago_2">1 hour ago</string>
+    <string name="clear_history_title">Clear History</string>
+    <string name="sure_to_clear_history_chat">Are you sure to clear history of this chat?</string>
+    <string name="clear">Clear</string>
+    <string name="delete_chat">Delete chat</string>
+    <string name="updating">Updating…</string>
+    <string name="you">You</string>
+    <string name="review_earlier_messages">LOAD EARLIER MESSAGES</string>
+    <string name="title_activity_display_image">Display Image</string>
+    <string name="toast_error_unable_to_load_image">Unable to load image</string>
+    <string name="action_save">Save to gallery</string>
+    <string name="toast_image_saved_to_gallery">Image saved to gallery</string>
+    <string name="toast_error_image_not_downloaded">Image couldn\'t be downloaded</string>
+    <string name="profile">Profile</string>
+    <string name="title_activity_un_caught_exception">UnCaught Exception</string>
+    <string name="location">Location</string>
+    <string name="processing">Processing…</string>
+    <string name="validate_image">Picture is Required</string>
+    <string name="validate_tags">You must choose at least/minimum 2 tags</string>
+
+    <string name="please_wait_a_moment">Please wait a moment</string>
+    <string name="toast_has_been_shared_on_profile">Has shared on your profile</string>
+    <string name="toast_error_sharing_post">Error in sharing the post</string>
+    <string name="retry">Retry</string>
+    <string name="toast_error_upload_failed">Upload has failed!</string>
+    <string name="toast_error_couldnt_get_thumbnail">Unsupported video</string>
+    <string name="add_catalogue">Add Catalog</string>
+    <string name="download_confirmation_title">Download Confirm</string>
+    <string name="want_to_download_catalogue">Do you want to download this catalog?</string>
+    <string name="terminate_session">Do you want to terminate this session?</string>
+    <string name="terminate">Terminate</string>
+    <string name="terminate_all">Terminate all other sessions</string>
+
+    <string name="download">Download</string>
+    <string name="invite">Invite</string>
+
+    <string name="download_completed_title">Download Completed</string>
+    <string name="want_to_open_catalogue">Would you like to open the downloaded catalog?</string>
+    <string name="dismiss">Dismiss</string>
+    <string name="open">Open</string>
+    <string name="action_deactivate">Deactivate</string>
+    <string name="action_logout">Logout</string>
+
+    <string name="title_activity_notifications">Notifications</string>
+    <string name="title_activity_requests">Requests</string>
+
+    <string name="you_have_new_notifications">You have new notifications.</string>
+    <string name="settings">Settings</string>
+    <string name="others">Others</string>
+    <string name="about">About</string>
+    <string name="suggestionProducts">Suggestion for you</string>
+    <string name="toast_set_admin">Your admin has been set</string>
+    <string name="desc_twostep">You have enabled Two-Step Verification, so your account is protected with an additional password.</string>
+    <string name="action_update_info">Update Info</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_retype_password">Re-type Password</string>
+    <string name="hint_current_password">Current password</string>
+    <string name="hint_verify_twostep">Verification code</string>
+    <string name="btn_login">Login</string>
+    <string name="btn_enable">Enable</string>
+    <string name="unknown">Unknown</string>
+    <string name="pref_account_settings">Account</string>
+    <string name="pref_denied_profiles">Denied Profiles</string>
+    <string name="pref_blocked_list">Blocked Users</string>
+    <string name="pref_is_private">Is Private</string>
+    <string name="is_private_summary">When your account is private, only people you approve can see your posts. Your existing followers and following won\'t be affected.</string>
+    <string name="notification_settings">Notifications</string>
+    <string name="additional_password_settings">Additional password</string>
+    <string name="btn_enable_two_step">Enable Two-Step Verification</string>
+    <string name="btn_set_password_two_step">Set password</string>
+    <string name="btn_change_password_two_step">Change password</string>
+    <string name="btn_change_eamil_two_step">Change email</string>
+    <string name="btn_set_verify_two_step">Set Verify Code</string>
+    <string name="btn_verify">Verify</string>
+    <string name="not_verified_additional_password_settings">Please check your email to continue Two-Step Verification setup.</string>
+    <string name="desc_two_step">You can set a password that will be required when you log in on a new device in addition to the code you get in the SMS</string>
+    <string name="btn_disable_two_step">Disable Two-Step Verification</string>
+    <string name="desc_set_email_twostep">Please enter your email address to send verification link</string>
+    <string name="dialog_reset_pass_twostep">Are you sure to reset your password?</string>
+    <string name="desc_enter_twostep">Enter your password to Enter</string>
+    <string name="desc_set_password_twostep">Enter your password</string>
+    <string name="desc_verify_twostep">Enter your code that has been sent to your email address</string>
+    <string name="desc_disable_twostep">Enter your current password</string>
+    <string name="dialog_disable_twostep">Are you sure to disable Two-Step Verification</string>
+    <string name="pref_enable_vibrate">Enable Vibrate</string>
+    <string name="pref_enable_sound">Enable Sound</string>
+    <string name="pref_manage_notifications">Manage Notifications</string>
+    <string name="pref_support">Support</string>
+    <string name="help_center">Help Center</string>
+    <string name="pref_report_a_problem">Report a Problem</string>
+    <string name="pref_deactivate">Deactivate</string>
+    <string name="sure_to_deactivate">Are you sure to deactivate your account?</string>
+    <string name="sure_to_logout">Are you sure to logout?</string>
+    <string name="pref_deactivate_account">Deactivate Account</string>
+    <string name="pref_logout">Logout</string>
+    <string name="pref_faq">FAQ</string>
+    <string name="pref_about">About</string>
+    <string name="pref_ads">Ads</string>
+    <string name="pref_privacy_policy">Privacy Policy</string>
+    <string name="allow_contact_title">Allow Contact</string>
+    <string name="deny_contact_title">Deny Contact</string>
+    <string name="sure_to_allow_contact">Are you sure to allow this contact?</string>
+    <string name="sure_to_deny_contact">If you deny this contact, he/she is not able to see your post in timeline, Are you sure to deny this contact? </string>
+    <string name="title_activity_denied_list">Denied List</string>
+    <string name="title_activity_reset_pass">Reset password</string>
+    <string name="title_activity_change_pass">Change password</string>
+    <string name="title_disable_twostep">Disable Two-Step</string>
+    <string name="application">Application</string>
+    <string name="pref_mute_chat_notification">Enabled Notifications</string>
+    <string name="pref_mute_app_like">Enabled Post Like</string>
+    <string name="pref_mute_shop_like">Enabled Business\'s Post Like</string>
+    <string name="pref_mute_complex_like">Enabled Complex\'s Post Like</string>
+    <string name="pref_mute_comment">Enabled Comment</string>
+    <string name="pref_mute_shop_comment">Enabled Business\'s Comment</string>
+    <string name="pref_mute_complex_comment">Enabled Complex\'s Comment</string>
+    <string name="pref_mute_follow">Enabled Follow</string>
+    <string name="pref_mute_shop_follow">Enabled Business\'s Follow</string>
+    <string name="pref_mute_complex_follow">Enabled Complex\'s Follow</string>
+    <string name="pref_mute_rate_product">Enabled Rate Product</string>
+    <string name="pref_mute_rate_shop">Enabled Rate Business</string>
+    <string name="pref_mute_rate_complex">Enabled Rate Complex</string>
+    <string name="pref_mute_shop_manager">Enabled Business Manager</string>
+    <string name="pref_mute_complex_manager">Enabled Complex Manager</string>
+    <string name="write_problem_for_report">Please write your issue.</string>
+    <string name="write_here">Write here…</string>
+    <string name="toast_reporting_problem_failed">Reporting problem has failed</string>
+    <string name="toast_reporting_successfully">Your report has sent</string>
+    <string name="pref_private_messaging">Private Messaging</string>
+    <string name="is_private_messaging_summary">When your messaging is private, only people you approve can send you message. Your existing followers and following won\'t be affected.</string>
+    <string name="new_version_available">New Version Available</string>
+    <string name="confirm_to_download_new_version">New version is available! Would you like to download?</string>
+    <string name="download_failed">Download Failed!</string>
+    <string name="unfortunately_download_failed">Unfortunately the download has failed! Please try again.</string>
+    <string name="would_to_open_the_app_file">Would you like to install the downloaded new version?</string>
+    <string name="install">Install</string>
+    <string name="confirm_code_text">Collect-Up will send a SMS message to verify your phone number. Please confirm your country code and enter your phone number.</string>
+    <string name="verify_phone_number_title">Verify Your Phone Number</string>
+    <string name="toast_error_sms_limitation_exceed">SMS sending limitation ended. You can try again a day later.</string>
+    <string name="toast_error_connectivity_problem">Error in connecting to server</string>
+    <string name="invalid_username">Invalid username</string>
+    <string name="find_people">Find People</string>
+    <string name="pref_mute_app_join">Enabled Contact Joined</string>
+    <string name="account_is_private">This user is private</string>
+    <string name="title_clear_birthday">Clear Birthday</string>
+    <string name="title_enter_password">Enter password</string>
+    <string name="sure_to_clear_birthday">Are you sure to clear your birthday?</string>
+    <string name="recently">Recently</string>
+    <string name="toast_error_tag_limitation_exceed">Tag limitation has exceeded</string>
+    <string name="report_post">Report Confirmation</string>
+    <string name="sure_to_report_post">Are you sure to report this post?</string>
+    <string name="share_post">Share Confirmation</string>
+    <string name="sure_to_share_post_on_profile">Are you sure to share this post on your profile?</string>
+    <string name="sure_to_share_message_to_other">Are you sure to share this message to your friend ?</string>
+    <string name="message_success_forgotpass_twostep">Your password has been reset, You can check your email to set new password.</string>
+    <string name="message_success_changepass_twostep">Your password has been changed.</string>
+    <string name="message_success_setpass_twostep">Your Two-Step Verification is Enabled.</string>
+    <string name="all_stickers">All stickers</string>
+    <string name="my_stickers">My stickers</string>
+
+    <string name="share">Share</string>
+    <string name="set">Set</string>
+    <string name="sure_to_delete_shop">All your business\'s data will be lost! Are you sure to delete this business?</string>
+    <string name="sure_to_delete_complex">All your complex\'s data will be lost! Are you sure to delete this complex?</string>
+    <string name="pref_privacy">Account Privacy</string>
+    <string name="pref_sessions">Active Sessions</string>
+    <string name="pref_twosteps">Two-Step Verification</string>
+    <string name="pref_show_username">Show Username</string>
+    <string name="pref_show_gender">Show Gender</string>
+    <string name="pref_show_job">Show Job</string>
+    <string name="pref_show_email">Show Email</string>
+    <string name="pref_show_phone_number">Show Phone Number</string>
+    <string name="pref_show_birthday">Show Birthday</string>
+    <string name="pref_show_location">Show Location</string>
+    <string name="pref_show_languages">Show Languages</string>
+    <string name="hint_biography">Biography</string>
+    <string name="pref_show_biography">Show Biography</string>
+    <string name="pref_account_privacy">Account Privacy</string>
+    <string name="pref_session_manager">Session Manager</string>
+    <string name="sure_to_delete_product">All your product\'s data will be lost! Are you sure perform this action?</string>
+    <string name="hint_title">Title</string>
+    <string name="hint_text">Text</string>
+    <string name="pick_time">Pick Time</string>
+    <string name="toast_end_and_start_date_necessary">Start and end dates are necessary</string>
+    <string name="want_to_delete_event">Are you sure to delete this event?</string>
+    <string name="action_share">Share</string>
+    <string name="sure_to_delete_post">Are you sure to delete your post?</string>
+    <string name="delete_confirmation">Delete Confirmation</string>
+    <string name="action_deny_user">Deny User</string>
+    <string name="action_allow_user">Allow User</string>
+    <string name="allow">Allow</string>
+    <string name="deny">Deny</string>
+    <string name="toast_error_create_new_event">Error in creating new event</string>
+    <string name="toast_error_unlike">Error in unliking</string>
+    <string name="report_confirmation">Report Confirmation</string>
+    <string name="share_confirmation">Share Confirmation</string>
+    <string name="validUsernameInput">0123456789_qwertzuiopasdfghjklyxcvbnmQWERTZUIOPASDFGHJKLYXCVBNM</string>
+    <string name="placed_here">Placed here</string>
+    <string name="action_mute_notifications">Mute Notifications</string>
+    <string name="unmute_notifications">Unmute Notifications</string>
+    <string name="toast_error_max_select_language_exceed">Selecting languages limitation has exceeded</string>
+    <string name="create">Create</string>
+    <string name="report">Report</string>
+    <string name="share_on_profile">Share on profile</string>
+    <string name="share_to_chats">Share to chats</string>
+    <string name="something_went_wrong_2">Something went wrong!</string>
+    <string name="cannot_share">The item cannot be shared! Try later.</string>
+    <string name="contact_seller">Save above number if you would like to have a conversation about the product(s).</string>
+    <string name="update_location_by_click">Update the location by clicking on the map.</string>
+
+    <string name="text">Text</string>
+    <string name="error_drm_not_supported">Protected content not supported on API levels below 18</string>
+    <string name="error_drm_unsupported_scheme">This device does not support the required DRM scheme</string>
+    <string name="error_drm_unknown">An unknown DRM error occurred</string>
+    <string name="error_no_decoder">This device does not provide a decoder for <xliff:g id="mime_type">%1$s</xliff:g></string>
+    <string name="error_no_secure_decoder">This device does not provide a secure decoder for <xliff:g id="mime_type">%1$s</xliff:g></string>
+    <string name="error_querying_decoders">Unable to query device decoders</string>
+    <string name="error_instantiating_decoder">Unable to instantiate decoder <xliff:g id="decoder_name">%1$s</xliff:g></string>
+    <string name="error_fill">Please fill it!</string>
+    <string name="error_password_lenth">Please enter at least 4 characters!</string>
+    <string name="error_pass_notmatch">Passwords do not match</string>
+    <string name="error_email_validator">Please enter correct email address</string>
+    <string name="storage_permission_denied">Permission to access storage was denied</string>
+    <string name="save_to_gallery">Save to gallery</string>
+    <string name="title_activity_two">Settings</string>
+
+    <!-- Strings related to Settings -->
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">General</string>
+
+    <string name="pref_title_social_recommendations">Enable social recommendations</string>
+    <string name="pref_description_social_recommendations">Recommendations for people to contact
+        based on your message history
+    </string>
+
+    <string name="pref_title_display_name">Display name</string>
+    <string name="pref_default_display_name">John Smith</string>
+
+    <string name="pref_title_add_friends_to_messages">Add friends to messages</string>
+    <string-array name="pref_example_list_titles">
+        <item>Always</item>
+        <item>When possible</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_example_list_values">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+    </string-array>
+
+    <!-- Example settings for Data & Sync -->
+    <string name="pref_header_data_sync">Data &amp; sync</string>
+
+    <string name="pref_title_sync_frequency">Sync frequency</string>
+    <string-array name="pref_sync_frequency_titles">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>
+
+    <string name="pref_title_system_sync_settings">System sync settings</string>
+
+    <!-- Example settings for Notifications -->
+    <string name="pref_header_notifications">Notifications</string>
+
+    <string name="pref_title_new_message_notifications">New message notifications</string>
+
+    <string name="pref_title_ringtone">Ringtone</string>
+    <string name="pref_ringtone_silent">Silent</string>
+
+    <string name="pref_title_vibrate">Vibrate</string>
+</resources>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Created by Collect-up  on December 27, 2016.
+  ~
+  ~ This is the source code of C-Up v1.0
+  ~
+  ~ Copyright (c) 2016 C-Up. All rights reserved.
+  -->
+
+<!--drawable/btn_feed_action.xml-->
+<selector xmlns:android="http://schemas.android.com/apk/res/android"
+          android:enterFadeDuration="200"
+          android:exitFadeDuration="200">
+    <item android:state_pressed="false">
+        <shape android:shape="oval">
+            <solid android:color="@android:color/transparent" />
+        </shape>
+    </item>
+    <item android:state_pressed="true">
+        <shape android:shape="oval">
+            <solid android:color="#6621425d" />
+        </shape>
+    </item>
+</selector>

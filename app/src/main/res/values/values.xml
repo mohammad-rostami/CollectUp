@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="ComplexAvatarView">
+        <attr name="cav_textColor" format="color" />
+        <attr name="cav_text" format="string" />
+        <attr name="cav_textGravity" format="reference" />
+        <attr name="cav_textSize" format="dimension" />
+        <attr name="cav_textAllCaps" format="boolean" />
+        <attr name="cav_backgroundColor" format="color" />
+        <attr name="cav_randomizedBackgroundColor" format="boolean" />
+        <attr name="cav_textAppearance" format="reference" />
+        <attr name="cav_alphaAnimatorDuration" format="integer" />
+        <attr name="cav_roundCorner" format="float" />
+        <attr name="cav_backgroundDrawType" format="enum">
+            <enum name="circle" value="0" />
+            <enum name="rectangle" value="1" />
+        </attr>
+        <attr name="cav_borderColor" format="color" />
+        <attr name="cav_borderWidth" format="dimension" />
+    </declare-styleable>
+</resources>

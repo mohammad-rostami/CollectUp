@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Title"
+        android:textColor="@color/primary_text"
+        android:textSize="14sp"
+        android:textStyle="bold"/>
+    <!-- android:textAppearance="@style/TextAppearance.AppCompat.title"-->
+    <TextView
+        android:id="@+id/txtDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtTitle"
+        android:text="desc"
+        android:textSize="12sp"/>
+    <!--android:textAppearance="@style/TextAppearance.AppCompat.Caption"-->
+
+    <Button
+
+        android:id="@+id/btnAdd"
+        android:layout_width="50dp"
+        android:layout_height="25dp"
+        android:layout_alignBaseline="@+id/txtDesc"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/corner_radius_button"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:gravity="center"
+        android:text="@string/add"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="12sp"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnAdd"
+        android:layout_marginTop="20dp">
+
+
+    </android.support.v7.widget.RecyclerView>
+</RelativeLayout>

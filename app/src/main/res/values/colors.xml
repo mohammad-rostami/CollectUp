@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Created by Collect-up  on December 27, 2016.
+  ~
+  ~ This is the source code of C-Up v1.0
+  ~
+  ~ Copyright (c) 2016 C-Up. All rights reserved.
+  -->
+
+<resources>
+    <!-- AppTheme base colors -->
+
+    <color name="colorPrimary">#01579B</color>
+    <color name="primary_dark">#014378</color>
+    <color name="colorAccent">#01579B</color>
+    <color name="accent_opacity">#7eb8e7</color>
+    <color name="primary_text">#dd000000</color>
+    <color name="secondary_text">#89000000</color>
+    <color name="rating_color">#424242</color>
+
+    <color name="icons">#FFFFFF</color>
+    <color name="divider">#B6B6B6</color>
+    <color name="dialog_background">#ffffff</color>
+    <color name="snackbar_color">#FF9800</color>
+    <color name="suggestion_background">#90000000</color>
+    <color name="header_alpha">#66000000</color>
+    <color name="alpha_background">#14000000</color>
+    <color name="alpha_background_button">#be000000</color>
+    <color name="alpha_background_gray">#71000000</color>
+
+    <color name="red">#F44336</color>
+    <color name="green">#4CAF50</color>
+    <color name="green_opacity">#a8edaa</color>
+
+    <!-- GetStart colors -->
+    <color name="button_get_start_background2">@color/colorAccent</color>
+
+    <color name="chat_subtitle">#ededed</color>
+
+    <color name="button_color">#727272</color>
+    <color name="text_color_hint">#b6b6b6</color>
+
+    <color name="btn_context_menu_normal">#ffffff</color>
+    <color name="btn_context_menu_pressed">#ffffff</color>
+
+    <color name="text_like_counter">#2b5a83</color>
+    <color name="btn_context_menu_text_red">#ffff0000</color>
+
+    <color name="bottom_sheet_item_pressed">#E6E6E6</color>
+
+    <color name="gray">@android:color/darker_gray</color>
+    <color name="transparent">@android:color/transparent</color>
+    <color name="background_tab_pressed">#E6EBEF</color>
+    <color name="background_tab">#DCE1E2</color>
+    <color name="background_chat_emojies">#E6EBEF</color>
+    <color name="background_chat_backspace">#E6EBEF</color>
+    <color name="chat_setting">#40000000</color>
+
+    <color name="comment_new_color">#F2F2F2</color>
+    <color name="default_white">#FFFFFF</color>
+    <color name="item_slider_catalogue_product">#2a36dc</color>
+</resources>

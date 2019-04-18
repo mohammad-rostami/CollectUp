@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/bottonbar_size"
+                android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/txtDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/desc_set_email_twostep"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/secondary_text"/>
+
+    <EditText
+        android:id="@+id/edtEmail"
+        style="@style/AppTheme.EditText.Iconic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtDesc"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:hint="@string/hint_email_address"
+        android:inputType="textEmailAddress"
+        android:singleLine="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/colorAccent"
+
+        />
+
+    <EditText
+        android:id="@+id/edtPassword"
+        style="@style/AppTheme.EditText.Iconic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtEmail"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="@string/hint_password"
+        android:inputType="textPassword"
+        android:singleLine="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/colorAccent"
+
+        />
+
+    <EditText
+        android:id="@+id/edtRetypePassword"
+        style="@style/AppTheme.EditText.Iconic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtPassword"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="@string/hint_retype_password"
+        android:inputType="textPassword"
+        android:singleLine="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/colorAccent"
+        />
+
+    <Button
+        android:id="@+id/btnEnable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtRetypePassword"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/get_start_register_btn"
+        android:enabled="true"
+        android:minWidth="221dp"
+        android:text="set"
+        android:textAllCaps="true"
+        android:textColor="@android:color/white"/>
+
+
+</RelativeLayout>

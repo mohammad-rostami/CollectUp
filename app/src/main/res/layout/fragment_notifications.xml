@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Created by Collect-up  on December 27, 2016.
+  ~
+  ~ This is the source code of C-Up v1.0
+  ~
+  ~ Copyright (c) 2016 C-Up. All rights reserved.
+  -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/bottonbar_size"
+                tools:context=".fragments.FragmentNotifications">
+
+    <LinearLayout
+        android:id="@+id/btn_request"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:orientation="horizontal"
+        android:padding="@dimen/activity_padding"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:padding="2dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_account_plus"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical|left"
+            android:text="@string/requests"
+            android:textColor="#000000"
+            android:textSize="15sp"/>
+
+        <com.collect_up.c_up.view.CustomNotidicationCounter
+            android:id="@+id/txtReqCounter"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:background="@drawable/notifications_unseen_count"
+            android:clickable="true"
+            android:gravity="center"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:text="+99"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtSection"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_below="@+id/btn_request"
+        android:background="#e1e1e1"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:text="@string/title_activity_notifications"
+        android:textAllCaps="true"
+        android:textColor="@color/secondary_text"
+        android:textSize="12sp"
+        android:textStyle="bold"/>
+
+    <com.marshalchen.ultimaterecyclerview.UltimateRecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
+                                                               android:id="@+id/recycler_view"
+                                                               android:layout_width="match_parent"
+                                                               android:layout_height="match_parent"
+                                                               android:layout_below="@+id/txtSection"
+                                                               app:recyclerviewEmptyView="@layout/empty_list_view"/>
+
+    <com.rey.material.widget.ProgressView
+        android:id="@+id/progress_bar_loading"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_centerInParent="true"
+        app:pv_autostart="true"
+        app:pv_circular="true"
+        app:pv_progressMode="indeterminate"
+        app:pv_progressStyle="@style/Material.Drawable.CircularProgress"/>
+
+</RelativeLayout>

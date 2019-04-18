@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Created by Collect-up  on December 27, 2016.
+  ~
+  ~ This is the source code of C-Up v1.0
+  ~
+  ~ Copyright (c) 2016 C-Up. All rights reserved.
+  -->
+
+<android.support.v7.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v7.preference.PreferenceCategory
+        android:layout="@layout/preference_category"
+        android:title="@string/notification_settings">
+        <Preference
+            android:key="pref_manage_notifications"
+            android:title="@string/pref_manage_notifications"
+            >
+
+        </Preference>
+        <SwitchPreferenceCompat
+            android:id="@+id/pref_enable_vibrate"
+            android:defaultValue="@bool/prefEnableVibrate"
+            android:key="prefEnableVibrate"
+            android:title="@string/pref_enable_vibrate"/>
+        <SwitchPreferenceCompat
+            android:id="@+id/pref_enable_sound"
+            android:defaultValue="@bool/prefEnableSound"
+            android:key="prefEnableSound"
+            android:title="@string/pref_enable_sound"/>
+    </android.support.v7.preference.PreferenceCategory>
+    <android.support.v7.preference.PreferenceCategory
+        android:layout="@layout/preference_category"
+        android:title="@string/pref_account_settings">
+        <Preference
+            android:key="pref_privacy"
+            android:title="@string/pref_privacy"
+            >
+
+        </Preference>
+        <Preference
+            android:key="pref_sessions"
+            android:title="@string/pref_sessions"
+            >
+
+        </Preference>
+        <Preference
+            android:key="pref_twosteps"
+            android:title="@string/pref_twosteps"
+            >
+
+        </Preference>
+        <Preference
+            android:key="stickers"
+            android:title="@string/stickers"
+            >
+
+        </Preference>
+        <Preference
+            android:key="pref_denied_profiles"
+            android:title="@string/pref_denied_profiles"
+            >
+
+        </Preference>
+        <Preference
+            android:key="pref_blocked_list"
+            android:title="@string/pref_blocked_list"
+            >
+
+        </Preference>
+        <SwitchPreferenceCompat
+            android:id="@+id/pref_is_private"
+            android:key="prefAccountIsPrivate"
+            android:title="@string/pref_is_private"/>
+        <com.collect_up.c_up.view.NonClickableSummaryPreference
+            android:layout="@layout/item_pref_summary"
+            android:summary="@string/is_private_summary"/>
+        <SwitchPreferenceCompat
+            android:id="@+id/pref_private_messaging"
+            android:key="prefPrivateMessaging"
+            android:title="@string/pref_private_messaging"/>
+        <com.collect_up.c_up.view.NonClickableSummaryPreference
+            android:layout="@layout/item_pref_summary"
+            android:summary="@string/is_private_messaging_summary"/>
+        <com.collect_up.c_up.view.PreferenceDeactivateDialog android:title="@string/pref_deactivate"/>
+        <com.collect_up.c_up.view.PreferenceLogoutDialog android:title="@string/pref_logout"/>
+
+    </android.support.v7.preference.PreferenceCategory>
+    <PreferenceCategory
+        android:layout="@layout/preference_category"
+        android:title="@string/pref_support">
+        <Preference android:title="@string/help_center">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="http://collect-up.com"/>
+        </Preference>
+
+        <com.collect_up.c_up.view.PreferenceReportDialog android:title="@string/pref_report_a_problem"/>
+
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:layout="@layout/preference_category"
+        android:title="@string/pref_about">
+        <Preference android:title="@string/pref_faq">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="http://collect-up.com"/>
+        </Preference>
+        <Preference android:title="@string/pref_ads">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="http://collect-up.com"/>
+        </Preference>
+        <Preference android:title="@string/pref_privacy_policy">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="http://collect-up.com"/>
+        </Preference>
+    </PreferenceCategory>
+    <com.collect_up.c_up.view.NonClickableVersionPreference android:layout="@layout/item_pref_version"/>
+</android.support.v7.preference.PreferenceScreen>

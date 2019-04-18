@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Created by Collect-up  on December 27, 2016.
+  ~
+  ~ This is the source code of C-Up v1.0
+  ~
+  ~ Copyright (c) 2016 C-Up. All rights reserved.
+  -->
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="@dimen/bottonbar_size"
+    tools:context=".fragments.FragmentPostLikes">
+
+    <!--<include
+        android:id="@+id/toolbar"
+        layout="@layout/reuse_toolbar_fixed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" />-->
+
+    <com.marshalchen.ultimaterecyclerview.UltimateRecyclerView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/recycler_view_likes"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:recyclerviewEmptyView="@layout/empty_list_view">
+    </com.marshalchen.ultimaterecyclerview.UltimateRecyclerView>
+
+    <!-- <include
+         android:id="@+id/layout_bottom_menu"
+         layout="@layout/reuse_bottom_menu"
+         android:layout_width="match_parent"
+         android:layout_height="@dimen/bottonbar_size"
+         android:layout_alignParentBottom="true" />-->
+    <com.rey.material.widget.ProgressView
+        android:id="@+id/progress_bar_loading"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_centerInParent="true"
+        app:pv_autostart="true"
+        app:pv_circular="true"
+        app:pv_progressMode="indeterminate"
+        app:pv_progressStyle="@style/Material.Drawable.CircularProgress"/>
+
+</RelativeLayout>

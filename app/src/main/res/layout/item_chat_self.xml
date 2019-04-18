@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  ~ Created by Collect-up  on December 27, 2016.
+  ~
+  ~ This is the source code of C-Up v1.0
+  ~
+  ~ Copyright (c) 2016 C-Up. All rights reserved.
+  -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relative_layout_container"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingBottom="5dp"
+    android:paddingRight="10dp"
+    android:paddingTop="5dp">
+
+    <com.collect_up.c_up.view.chat.ChatLayout
+        android:id="@+id/bubble"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:background="@drawable/balloon_outgoing_normal">
+
+        <ImageView
+            android:id="@+id/image_view_status"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignBottom="@+id/text_view_message"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:contentDescription="@null"
+            android:src="@drawable/ic_clock"
+            android:tint="@color/colorAccent" />
+
+        <TextView
+            android:id="@+id/text_view_time"
+            style="@style/chat_timings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/image_view_status"
+            android:layout_marginBottom="2dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_toLeftOf="@id/image_view_status"
+            android:layout_toStartOf="@id/image_view_status"
+            android:text="17:10 AM"
+            android:textColor="@color/gray" />
+
+        <TextView
+            android:id="@id/text_view_message"
+            style="@style/chat_text_message_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/text_view_time"
+            android:layout_toStartOf="@id/text_view_time"
+            android:text="Rahul Agrawal not what he wants." />
+    </com.collect_up.c_up.view.chat.ChatLayout>
+</RelativeLayout>

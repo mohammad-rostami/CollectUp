@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.collect_up.c_up.view.CustomProgressView
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.github.rahatarmanahmed.cpv.CircularProgressView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/progress_bar_loading"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_gravity="center"
+        android:visibility="visible"
+        app:cpv_animAutostart="true"
+        app:cpv_indeterminate="false"
+        app:cpv_thickness="4dp" />
+
+    <ImageButton
+        android:id="@+id/image_button_retry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/file_download_cancel"
+        android:contentDescription="@null"
+        android:tag="cancel" />
+
+</com.collect_up.c_up.view.CustomProgressView>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  ~ Created by Collect-up  on December 27, 2016.
+  ~
+  ~ This is the source code of C-Up v1.0
+  ~
+  ~ Copyright (c) 2016 C-Up. All rights reserved.
+  -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingBottom="3dp"
+    android:paddingTop="3dp">
+    />
+
+    <TextView
+        android:id="@+id/text_view_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/chat_settings"
+        android:gravity="center"
+        android:importantForAccessibility="auto"
+        android:text="Mohammadreza left the room"
+        android:textAppearance="@style/chat_settings" />
+</LinearLayout>

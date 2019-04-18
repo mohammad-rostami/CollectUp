@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  ~ Created by Collect-up  on December 27, 2016.
+  ~
+  ~ This is the source code of C-Up v1.0
+  ~
+  ~ Copyright (c) 2016 C-Up. All rights reserved.
+  -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relative_layout_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="5dp"
+    android:paddingLeft="10dp"
+    android:paddingTop="5dp">
+
+    <com.collect_up.c_up.view.chat.ChatLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/balloon_incoming_normal">
+
+        <TextView
+            android:id="@+id/text_view_message"
+            style="@style/chat_text_message_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxWidth="270dp"
+            android:paddingLeft="20dp"
+            android:text="Rahul Agrawal is a good boy but he does not know what he wants." />
+
+        <TextView
+            android:id="@+id/text_view_time"
+            style="@style/chat_timings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/text_view_message"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/text_view_message"
+            android:paddingBottom="5dp"
+            android:paddingRight="10dp"
+            android:text="17:10"
+            android:textColor="@color/gray" />
+
+    </com.collect_up.c_up.view.chat.ChatLayout>
+
+</RelativeLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Created by Collect-up  on December 27, 2016.
+  ~
+  ~ This is the source code of C-Up v1.0
+  ~
+  ~ Copyright (c) 2016 C-Up. All rights reserved.
+  -->
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="@dimen/bottonbar_size"
+    android:orientation="vertical"
+    tools:context=".fragments.FragmentEventNew">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/layout_bottom_menu"
+        android:paddingBottom="6dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="6dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/edit_text_title"
+                style="@style/AppTheme.EditText.Iconic"
+                android:drawableLeft="@drawable/ic_title_edit_text"
+                android:hint="@string/hint_title"
+                android:inputType="text"
+                android:singleLine="true"/>
+
+            <EditText
+                android:id="@+id/edit_text_message"
+                style="@style/AppTheme.EditText.Iconic"
+                android:drawableLeft="@drawable/ic_description_edit_text"
+                android:hint="@string/hint_text"
+                android:inputType="textMultiLine"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/text_view_date_start"
+                    style="@style/AppThemeTextViewIconic"
+                    android:drawableLeft="@drawable/ic_date_edit_text"
+                    android:text="Start"/>
+
+                <TextView
+                    android:id="@+id/text_view_date_end"
+                    style="@style/AppThemeTextViewIconic"
+                    android:drawableLeft="@drawable/ic_date_edit_text"
+                    android:text="End"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

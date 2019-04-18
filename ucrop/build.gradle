@@ -1,0 +1,58 @@
+apply plugin: 'com.android.library'
+
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion '25.0.0'
+
+    defaultConfig {
+        minSdkVersion 16
+        targetSdkVersion 23
+        versionCode 22
+        versionName "2.2.0-native"
+
+        vectorDrawables.useSupportLibrary = true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_7
+        targetCompatibility JavaVersion.VERSION_1_7
+    }
+    lintOptions {
+        abortOnError false
+    }
+
+  //  resourcePrefix 'ucrop_'
+
+    sourceSets.main {
+        jni.srcDirs = [];
+    }
+
+}
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'com.android.support:support-annotations:24.2.0'
+    compile 'com.android.support:recyclerview-v7:24.2.0'
+    compile 'com.android.support:appcompat-v7:24.2.0'
+    compile 'com.android.support:design:24.2.0'
+    compile 'com.squareup.okhttp3:okhttp:3.4.1'
+    compile 'com.android.support:recyclerview-v7:24.2.0'
+    compile 'com.github.zomato:androidphotofilters:1.0.1'
+
+    compile 'org.greenrobot:eventbus:3.0.0'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'com.karumi:dexter:4.0.0'
+
+    compile 'com.google.android.exoplayer:exoplayer:r2.0.0'
+
+    compile 'id.zelory:compressor:1.0.4'
+    compile 'com.iceteck.silicompressorr:silicompressor:1.1.0'
+}

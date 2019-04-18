@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Created by Collect-up  on December 27, 2016.
+  ~
+  ~ This is the source code of C-Up v1.0
+  ~
+  ~ Copyright (c) 2016 C-Up. All rights reserved.
+  -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/postLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorAccent"
+        android:elevation="4dp"
+        app:theme="@style/Toolbar">
+
+        <com.collect_up.c_up.view.CustomEditText
+            android:id="@+id/edtSearchPeople"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorAccent"
+            android:drawableLeft="@drawable/ic_search_white"
+            android:hint="@string/hint_search"
+            android:visibility="gone"/>
+    </android.support.v7.widget.Toolbar>
+
+    <FrameLayout
+        android:id="@+id/frameHolder"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_below="@+id/toolbar"
+        android:background="@color/default_white">
+
+
+        <ImageView
+            android:id="@+id/imgTag"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/splash"/>
+
+    </FrameLayout>
+
+
+    <fragment xmlns:tools="http://schemas.android.com/tools"
+              android:id="@+id/fragmentSuggestionlist"
+              android:name="com.collect_up.c_up.fragments.FragmentMention"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_marginBottom="48dp"
+              android:layout_below="@+id/toolbar"
+              android:background="@color/dialog_background"
+              android:visibility="gone"
+              tools:layout="@layout/fragment_tabs"/>
+</RelativeLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Created by Collect-up  on December 27, 2016.
+  ~
+  ~ This is the source code of C-Up v1.0
+  ~
+  ~ Copyright (c) 2016 C-Up. All rights reserved.
+  -->
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/btn_default_normal"
+          android:state_enabled="true"
+          android:state_window_focused="false" />
+    <item android:state_window_focused="false" android:state_enabled="false"
+          android:drawable="@drawable/btn_default_normal_gray_bg" />
+    <item android:drawable="@drawable/btn_default_pressed"
+          android:state_pressed="true" />
+    <item android:drawable="@drawable/btn_default_selected"
+          android:state_enabled="true"
+          android:state_focused="true" />
+    <item android:drawable="@drawable/btn_default_normal"
+          android:state_enabled="true" />
+    <!--<item android:state_focused="true"
+          android:drawable="@drawable/btn_default_normal_disable_focused" />-->
+    <item
+        android:drawable="@drawable/btn_default_normal_gray_bg" />
+</selector>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Created by Collect-up  on December 27, 2016.
+  ~
+  ~ This is the source code of C-Up v1.0
+  ~
+  ~ Copyright (c) 2016 C-Up. All rights reserved.
+  -->
+
+<!-- This layout only merged to some other layouts and not to be used directly. -->
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        app:layout_scrollFlags="scroll|enterAlways"
+        app:theme="@style/Toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="50dp"
+            android:gravity="center_vertical">
+
+            <com.collect_up.c_up.util.ComplexAvatarView
+                android:id="@+id/image_view_picture"
+                android:layout_width="58dp"
+                android:layout_height="58dp"
+                android:contentDescription="@null"
+                app:cav_textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+                app:cav_textColor="@android:color/white"
+                app:cav_textSize="20sp"
+                android:src="@drawable/ic_camera_gray" />
+
+            <LinearLayout
+                android:id="@+id/linear_layout_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginStart="25dp"
+                android:orientation="vertical"
+                android:paddingRight="4dp">
+
+                <TextView
+                    android:id="@+id/text_view_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:text="New Text"
+                    android:textColor="@android:color/white"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/text_view_subtitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="New Text"
+                    android:textColor="@color/chat_subtitle"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.Toolbar>
+</merge>

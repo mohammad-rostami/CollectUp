@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Created by Collect-up  on December 27, 2016.
+  ~
+  ~ This is the source code of C-Up v1.0
+  ~
+  ~ Copyright (c) 2016 C-Up. All rights reserved.
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="6dp"
+    android:paddingLeft="12dp"
+    android:paddingRight="12dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text_view_followers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="0"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+                android:textColor="@color/primary_text" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/followers" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text_view_following"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="0"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+                android:textColor="@color/primary_text" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/following" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_follow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="12dp"
+        android:background="@color/button_get_start_background2"
+        android:minWidth="221dp"
+        android:tag="false"
+        android:text="@string/follow"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/text_view_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:drawableLeft="@drawable/ic_username_edit_text"
+        android:drawablePadding="8dp"
+        android:drawableStart="@drawable/ic_username_edit_text"
+        android:gravity="center_vertical"
+        android:text="New Text"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/text_view_gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:drawableLeft="@drawable/ic_gender_edit_text"
+        android:drawablePadding="8dp"
+        android:drawableStart="@drawable/ic_gender_edit_text"
+        android:gravity="center_vertical"
+        android:text="New Text"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/text_view_job"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:drawableLeft="@drawable/ic_job_edit_text"
+        android:drawablePadding="8dp"
+        android:drawableStart="@drawable/ic_job_edit_text"
+        android:gravity="center_vertical"
+        android:text="New Text"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/text_view_phone_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:drawableLeft="@drawable/ic_phone_edit_text"
+        android:drawablePadding="8dp"
+        android:drawableStart="@drawable/ic_phone_edit_text"
+        android:gravity="center_vertical"
+        android:text="New Text"
+        android:visibility="gone" />
+
+
+    <TextView
+        android:id="@+id/text_view_birthday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:drawableLeft="@drawable/ic_birthday_edit_text"
+        android:drawablePadding="8dp"
+        android:drawableStart="@drawable/ic_birthday_edit_text"
+        android:gravity="center_vertical"
+        android:text="New Text"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/text_view_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:drawableLeft="@drawable/ic_address_edit_text"
+        android:drawablePadding="8dp"
+        android:drawableStart="@drawable/ic_address_edit_text"
+        android:gravity="center_vertical"
+        android:text="@string/unknown"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/text_view_languages"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:drawableLeft="@drawable/ic_language_text_view"
+        android:drawablePadding="8dp"
+        android:drawableStart="@drawable/ic_language_text_view"
+        android:gravity="center_vertical"
+        android:text="New Text"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/text_view_biography"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:drawableLeft="@drawable/ic_description_edit_text"
+        android:drawablePadding="8dp"
+        android:drawableStart="@drawable/ic_description_edit_text"
+        android:gravity="center_vertical"
+        android:text="New Text"
+        android:visibility="gone" />
+</LinearLayout>

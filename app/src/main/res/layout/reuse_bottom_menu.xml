@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Created by Collect-up  on December 27, 2016.
+  ~
+  ~ This is the source code of C-Up v1.0
+  ~
+  ~ Copyright (c) 2016 C-Up. All rights reserved.
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/bottonbar_size"
+    android:layout_gravity="center_horizontal|bottom"
+    android:background="@drawable/bottom_menu"
+    android:gravity="center_horizontal|bottom"
+    android:orientation="horizontal">
+
+    <ImageButton
+        android:id="@+id/image_button_timeline"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.2"
+        android:background="@null"
+        android:contentDescription="@string/content_description_open_home"
+        android:padding="9dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_home_white_line" />
+
+    <ImageButton
+        android:id="@+id/image_button_shop"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.2"
+        android:background="@null"
+        android:contentDescription="@string/content_description_open_shop"
+        android:padding="9dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_shop_white_line" />
+
+    <com.collect_up.c_up.view.ClickableFrameLayout
+        android:id="@+id/frame_layout_add_container"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.2"
+        android:background="#3e3e3e"
+        android:clickable="true"
+        >
+
+        <ImageButton
+            android:id="@+id/image_button_add"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@null"
+            android:contentDescription="@string/content_description_add"
+            android:padding="10dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_plus_menu_bottom"
+            android:tint="@color/default_white" />
+    </com.collect_up.c_up.view.ClickableFrameLayout>
+
+    <com.collect_up.c_up.view.ClickableFrameLayout
+        android:id="@+id/frame_layout_notifications"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.2"
+        android:clickable="true"
+        android:onClick="onClick">
+
+        <ImageButton
+            android:layout_width="78dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@null"
+            android:contentDescription="@string/content_description_open_profile"
+            android:padding="9dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_earth_line" />
+
+        <com.collect_up.c_up.view.CustomNotidicationCounter
+            android:id="@+id/text_view_unseen_notifications"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="-13dp"
+            android:layout_marginTop="-12dp"
+            android:background="@drawable/notifications_unseen_count"
+            android:clickable="true"
+            android:gravity="center"
+            android:minHeight="20dp"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:text="+99"
+            android:textSize="12sp"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+    </com.collect_up.c_up.view.ClickableFrameLayout>
+
+    <ImageButton
+        android:id="@+id/image_button_chat"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.2"
+        android:background="@null"
+        android:contentDescription="@string/content_description_open_chat"
+        android:padding="9dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_chat_white_line" />
+
+</LinearLayout>

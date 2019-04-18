@@ -1,0 +1,282 @@
+<!--
+  ~ Created by Collect-up  on December 27, 2016.
+  ~
+  ~ This is the source code of C-Up v1.0
+  ~
+  ~ Copyright (c) 2016 C-Up. All rights reserved.
+  -->
+
+<resources>
+
+
+    <style name="SimpleDialogLight" parent="Material.App.Dialog.Simple.Light">
+
+        <item name="android:colorControlActivated">#FFFFFF</item>
+    </style>
+
+    <style name="DisplayImageActivity" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@android:color/black</item>
+        <item name="android:itemTextAppearance">
+            @style/AppTheme.TextAppearance.Widget.IconMenu.Item
+        </item>
+        <item name="android:colorPrimaryDark">@color/primary_dark</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+    </style>
+
+    <style name="UnCaughtExceptionActivity" parent="Theme.AppCompat.Light.NoActionBar">
+
+    </style>
+
+    <style name="TimelineTabLayoutTextAppearance" parent="TextAppearance.AppCompat.Medium">
+    </style>
+
+    <style name="MyTheme.ActionBarStyle" parent="@android:style/Widget.Holo.Light.ActionBar">
+        <item name="android:titleTextStyle">@android:color/white</item>
+    </style>
+
+    <style name="AppTheme.DrawerArrowStyle" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="spinBars">false</item>
+        <item name="color">@android:color/white</item>
+    </style>
+
+    <style name="SplashTheme" parent="AppTheme">
+        <item name="android:windowBackground">@drawable/splash</item>
+        <item name="android:windowAnimationStyle">@null</item>
+    </style>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="preferenceTheme">@style/PreferenceScreen</item>
+        <item name="android:alertDialogTheme">@style/Theme_Holo_Dialog_Alert</item>
+        <item name="alertDialogTheme">@style/Theme_Holo_Dialog_Alert</item>
+        <item name="android:dialogTheme">@style/Theme_Holo_Dialog_Alert</item>
+        <item name="dialogTheme">@style/Theme_Holo_Dialog_Alert</item>
+        <item name="drawerArrowStyle">@style/AppTheme.DrawerArrowStyle</item>
+        <item name="android:windowContentTransitions">true</item>
+        <item name="android:windowAllowEnterTransitionOverlap">true</item>
+        <item name="android:windowAllowReturnTransitionOverlap">true</item>
+        <item name="android:colorPrimaryDark">@color/primary_dark</item>
+        <item name="android:colorPrimary">@color/colorAccent</item>
+        <item name="android:textColorPrimary">@color/primary_text</item>
+        <item name="android:textColorSecondary">@color/secondary_text</item>
+        <item name="android:colorAccent">@color/colorAccent</item>
+        <item name="android:divider">@color/divider</item>
+        <item name="android:itemTextAppearance">
+            @style/AppTheme.TextAppearance.Widget.IconMenu.Item
+        </item>
+        <item name="android:actionBarStyle">@style/MyTheme.ActionBarStyle</item>
+        <item name="android:editTextColor">@color/icons</item>
+        <item name="android:colorControlActivated">@color/colorAccent</item>
+        <item name="android:colorControlHighlight">@color/colorAccent</item>
+        <item name="android:textColorHint">@color/text_color_hint</item>
+        <item name="android:windowBackground">@android:color/white</item>
+        <item name="android:colorControlNormal">@color/icons</item>
+        <item name="android:actionBarTabTextStyle">@style/ActionBarTabTextStyle</item>
+        <item name="android:editTextBackground">@drawable/edit_text_bottom_border_accent_color
+        </item>
+        <item name="android:actionMenuTextColor">@android:color/white</item>
+        <item name="android:listChoiceIndicatorSingle">@drawable/btn_radio_holo_light</item>
+        <item name="android:actionModeBackground">@color/colorAccent</item>
+
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorAccent">@color/accent</item>
+        <item name="divider">@color/divider</item>
+        <item name="colorControlNormal">@color/icons</item>
+        <item name="colorControlActivated">@color/accent</item>
+        <item name="colorControlHighlight">@color/accent</item>
+        <item name="editTextBackground">@drawable/edit_text_bottom_border_accent_color
+        </item>
+        <item name="actionMenuTextColor">@android:color/white</item>
+        <item name="actionModeBackground">@color/accent</item>
+    </style>
+
+    <style name="Preference">
+        <item name="android:layout">@layout/item_pref</item>
+    </style>
+
+    <style name="PreferenceFragmentList">
+        <item name="android:paddingLeft">0dp</item>
+        <item name="android:paddingRight">0dp</item>
+    </style>
+
+    <style name="PreferenceScreen" parent="PreferenceThemeOverlay">
+        <item name="preferenceScreenStyle">@style/Preference</item>
+        <item name="preferenceFragmentListStyle">@style/PreferenceFragmentList</item>
+
+    </style>
+
+    <style name="AppThemeDoneDiscardActivity" parent="AppTheme">
+        <item name="android:actionBarItemBackground">@drawable/ab_item_background</item>
+        <item name="actionBarItemBackground">@drawable/ab_item_background</item>
+
+        <item name="actionButtonStyle">@style/MyActionButtonStyle</item>
+        <item name="android:actionButtonStyle">@style/MyActionButtonStyle</item>
+    </style>
+
+    <style name="MyActionButtonStyle" parent="Widget.AppCompat.Light.ActionButton">
+        <item name="android:minHeight">?attr/actionBarSize</item>
+        <item name="android:minWidth">?attr/actionBarSize</item>
+    </style>
+
+    <style name="chat_settings" parent="TextAppearance.AppCompat.Small">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="AppTheme.EditText.Iconic" parent="Widget.AppCompat.EditText">
+        <item name="android:background">@drawable/edit_text_iconic</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:padding">14dp</item>
+        <item name="android:drawablePadding">14dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:ems">10</item>
+        <item name="android:textCursorDrawable">@null</item>
+
+        <item name="background">@drawable/edit_text_iconic</item>
+    </style>
+
+    <style name="Edittext.withoutLine" parent="Widget.AppCompat.EditText">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:padding">14dp</item>
+        <item name="android:drawablePadding">14dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:ems">10</item>
+        <item name="android:textCursorDrawable">@null</item>
+
+    </style>
+
+    <style name="AppThemeTextViewIconic">
+        <item name="android:background">@drawable/edit_text_iconic</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:padding">14dp</item>
+        <item name="android:drawablePadding">14dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:ems">10</item>
+        <item name="android:textCursorDrawable">@null</item>
+
+        <item name="background">@drawable/edit_text_iconic</item>
+    </style>
+
+    <style name="AppTheme.Spinner.Iconic" parent="Widget.AppCompat.Spinner">
+        <item name="android:background">@drawable/spinner_gender</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">42dp</item>
+        <item name="android:paddingTop">7dp</item>
+        <item name="android:paddingRight">14dp</item>
+        <item name="android:paddingBottom">7dp</item>
+
+        <item name="background">@drawable/spinner_gender</item>
+    </style>
+
+    <style name="Theme_Holo_Dialog_Alert" parent="@android:style/Theme.DeviceDefault.Dialog.NoActionBar">
+        <item name="android:windowBackground">@color/dialog_background</item>
+        <item name="android:windowTitleStyle">@style/DialogWindowTitle_Holo</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowMinWidthMajor">@android:dimen/dialog_min_width_major</item>
+        <item name="windowMinWidthMajor">@android:dimen/dialog_min_width_major</item>
+        <item name="android:windowMinWidthMinor">@android:dimen/dialog_min_width_minor</item>
+        <item name="windowMinWidthMinor">@android:dimen/dialog_min_width_minor</item>
+        <item name="android:padding">2dp</item>
+        <item name="android:textColorAlertDialogListItem">@color/primary_text</item>
+        <item name="android:textColorPrimary">@color/primary_text</item>
+        <item name="android:textColor">@color/colorAccent</item>
+
+    </style>
+
+
+    <style name="Theme_Holo_Dialog">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="di_dimAmount">0.5</item>
+        <item name="di_backgroundColor">@color/dialog_background</item>
+        <item name="di_elevation">4dp</item>
+        <item name="di_maxElevation">4dp</item>
+        <item name="di_titleTextAppearance">@style/TextAppearance.AppCompat.Title</item>
+        <item name="di_titleTextColor">@color/accent</item>
+        <item name="di_actionRipple">@style/Material.Drawable.Ripple.Wave</item>
+        <item name="di_actionTextAppearance">@style/TextAppearance.AppCompat.Button</item>
+        <item name="di_actionTextColor">?attr/colorControlActivated</item>
+        <item name="di_dividerColor">#1E999999</item>
+        <item name="di_dividerHeight">1dp</item>
+        <item name="di_cancelable">true</item>
+        <item name="di_canceledOnTouchOutside">true</item>
+    </style>
+
+    <!-- Local copy of android:DialogWindowTitle.Holo -->
+    <style name="DialogWindowTitle_Holo">
+        <item name="android:maxLines">1</item>
+        <item name="android:scrollHorizontally">true</item>
+        <item name="android:textAppearance">@android:style/TextAppearance.Holo.DialogWindowTitle
+        </item>
+    </style>
+
+    <style name="AppTheme.TransparentActivity">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <style name="AppTheme.TransparentActivity.FullScreen">
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="TabTextAppearance">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="ContextMenuButton">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/btn_context_menu</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:paddingRight">20dp</item>
+        <item name="android:textColor">?attr/colorPrimary</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="Toolbar">
+        <item name="android:textColorSecondary">@color/icons</item>
+        <item name="android:textColorPrimary">@color/icons</item>
+    </style>
+
+    <style name="ActionBarTabTextStyle" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/icons</item>
+    </style>
+
+    <style name="AppTheme.TextAppearance.Widget.IconMenu.Item" parent="@android:style/TextAppearance.Widget.IconMenu.Item">
+        <item name="android:textColor">@color/primary_text</item>
+    </style>
+
+    <style name="chat_text_message_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="AppThemeWithoutActivityAnimation" parent="AppTheme">
+        <item name="android:windowAnimationStyle">@null</item>
+    </style>
+
+    <style name="chat_timings" parent="@android:style/TextAppearance.DeviceDefault.Small">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+</resources>

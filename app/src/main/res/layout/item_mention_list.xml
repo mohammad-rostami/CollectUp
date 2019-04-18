@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Created by Collect-up  on December 27, 2016.
+  ~
+  ~ This is the source code of C-Up v1.0
+  ~
+  ~ Copyright (c) 2016 C-Up. All rights reserved.
+  -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/relative_layout_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/list_padding"
+    android:paddingRight="@dimen/list_padding">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/button_follow"
+        android:layout_toStartOf="@+id/button_follow"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp">
+
+        <com.collect_up.c_up.util.ComplexAvatarView
+            android:id="@+id/image_view_picture"
+            android:layout_width="36dp"
+            android:layout_height="48dp"
+            app:cav_textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+            app:cav_textColor="@android:color/white"
+            app:cav_textSize="20sp">
+
+        </com.collect_up.c_up.util.ComplexAvatarView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text_view_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="17dp"
+                android:layout_marginStart="17dp"
+                android:gravity="left"
+                android:text="New Text"
+                android:textColor="@android:color/white"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text_view_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="17dp"
+                android:layout_marginStart="17dp"
+                android:gravity="left"
+                android:text="New Text"
+                android:textColor="@color/divider"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height=".5dp"
+        android:layout_alignParentBottom="true"
+        android:background="#484848" />
+
+</RelativeLayout>

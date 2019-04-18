@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Created by Collect-up  on December 27, 2016.
+  ~
+  ~ This is the source code of C-Up v1.0
+  ~
+  ~ Copyright (c) 2016 C-Up. All rights reserved.
+  -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/bottonbar_size"
+                android:keepScreenOn="true"
+                tools:context=".fragments.FragmentProductEdit">
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/divider">
+
+        <org.apmem.tools.layouts.FlowLayout
+            android:id="@+id/linear_layout_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:orientation="horizontal"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="5dp">
+
+            <ImageButton
+                android:id="@+id/image_button_add_item"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@color/secondary_text"
+                android:contentDescription="@string/content_description_add_new_file"
+                android:src="@drawable/ic_plus"/>
+
+        </org.apmem.tools.layouts.FlowLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/linearLayout1"
+        android:clipToPadding="false"
+        android:padding="12dp"
+        android:scrollbarStyle="outsideInset"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/edit_text_name"
+                style="@style/AppTheme.EditText.Iconic"
+                android:drawableLeft="@drawable/ic_product_edit_text"
+                android:hint="@string/hint_title"
+                android:inputType="text"/>
+
+            <EditText
+                android:id="@+id/edit_text_extra_properties"
+                style="@style/AppTheme.EditText.Iconic"
+                android:drawableLeft="@drawable/ic_attach_money_grey_300_24dp"
+                android:hint="@string/tooltip_price"
+                android:inputType="textMultiLine"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.collect_up.c_up.view.MultiSpinner
+                    android:id="@+id/spinner_internal_categories"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/spinner_category"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="42dp"
+                    android:paddingRight="14dp"
+                    android:paddingTop="5dp"
+                    android:spinnerMode="dialog"/>
+
+                <ImageView
+                    android:id="@+id/btnNewCat"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/background_circle"
+                    android:padding="8dp"
+                    android:src="@drawable/ic_plus_menu_bottom"/>
+            </LinearLayout>
+            <EditText
+                android:id="@+id/edit_text_description"
+                style="@style/AppTheme.EditText.Iconic"
+                android:drawableLeft="@drawable/ic_description_edit_text"
+                android:hint="@string/hint_description"
+                android:inputType="textMultiLine"/>
+
+            <me.gujun.android.taggroup.TagGroup
+                android:id="@+id/tag_group"
+                style="@style/TagGroup.Large"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                app:atg_borderColor="@color/accent"
+                app:atg_borderStrokeWidth="1dp"
+                app:atg_checkedBackgroundColor="@color/accent"
+                app:atg_checkedBorderColor="@color/accent"
+                app:atg_isAppendMode="true"
+                app:atg_textColor="@color/accent"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/tag_desc"
+                android:textColor="@color/text_color_hint"/>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

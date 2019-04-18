@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Created by Collect-up  on December 27, 2016.
+  ~
+  ~ This is the source code of C-Up v1.0
+  ~
+  ~ Copyright (c) 2016 C-Up. All rights reserved.
+  -->
+
+<android.support.v7.preference.PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="@string/pref_account_privacy">
+    <SwitchPreferenceCompat
+        android:id="@+id/pref_show_username"
+        android:key="prefShowUsername"
+        android:title="@string/pref_show_username"/>
+    <SwitchPreferenceCompat
+        android:id="@+id/pref_show_gender"
+        android:key="prefShowGender"
+        android:title="@string/pref_show_gender"/>
+    <SwitchPreferenceCompat
+        android:id="@+id/pref_show_job"
+        android:key="prefShowJob"
+        android:title="@string/pref_show_job"/>
+    <SwitchPreferenceCompat
+        android:id="@+id/pref_show_email"
+        android:key="prefShowEmail"
+        android:title="@string/pref_show_email"/>
+    <SwitchPreferenceCompat
+        android:id="@+id/pref_show_phone_number"
+        android:key="prefShowPhoneNumber"
+        android:title="@string/pref_show_phone_number"/>
+    <SwitchPreferenceCompat
+        android:id="@+id/pref_show_birthday"
+        android:key="prefShowBirthday"
+        android:title="@string/pref_show_birthday"/>
+    <SwitchPreferenceCompat
+        android:id="@+id/pref_show_location"
+        android:key="prefShowLocation"
+        android:title="@string/pref_show_location"/>
+    <SwitchPreferenceCompat
+        android:id="@+id/pref_show_languages"
+        android:key="prefShowLanguages"
+        android:title="@string/pref_show_languages"/>
+    <SwitchPreferenceCompat
+        android:id="@+id/pref_show_biography"
+        android:key="prefShowBiography"
+        android:title="@string/pref_show_biography"/>
+</android.support.v7.preference.PreferenceScreen>

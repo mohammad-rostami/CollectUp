@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="TimelinePostContainer">
+        <attr name="tpc_looping" format="boolean" />
+        <attr name="tpc_foreground" format="reference" />
+    </declare-styleable>
+    <string name="image_loader_not_null">ImageLoader cannot be null.</string>
+    <string name="try_again">Try again</string>
+    <string name="type_must_defined">You must define the type.</string>
+    <string name="unable_to_play">Unable to play the video</string>
+</resources>

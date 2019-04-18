@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  ~ Created by Collect-up  on December 27, 2016.
+  ~
+  ~ This is the source code of C-Up v1.0
+  ~
+  ~ Copyright (c) 2016 C-Up. All rights reserved.
+  -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/relative_layout_container"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingBottom="5dp"
+    android:paddingLeft="10dp"
+    android:paddingTop="5dp">
+
+    <com.collect_up.c_up.util.ComplexAvatarView
+        android:id="@+id/image_view_person_picture"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:contentDescription="@null"
+        app:cav_textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+        app:cav_textColor="@android:color/white"
+        app:cav_textSize="15sp"
+        android:src="@drawable/placeholder"
+        app:cniv_borderColor="@color/colorAccent"
+        app:cniv_borderWidth="1dp" />
+
+    <com.collect_up.c_up.view.chat.ChatLayoutImage
+        android:id="@+id/bubble"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="6dp"
+        android:layout_marginStart="6dp"
+        android:layout_toEndOf="@+id/image_view_person_picture"
+        android:layout_toRightOf="@+id/image_view_person_picture"
+        android:background="@drawable/balloon_incoming_normal"
+        android:padding="6dp">
+
+        <RelativeLayout
+            android:id="@+id/relative_layout_container_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:layout_marginStart="7dp">
+
+            <ImageView
+                android:id="@+id/image_view_picture"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:contentDescription="@null"
+                android:maxHeight="100dp"
+                android:maxWidth="100dp"
+                android:minHeight="100dp"
+                android:minWidth="100dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/placeholder" />
+
+            <RelativeLayout
+                android:id="@+id/linear_layout_name_container"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_marginLeft="6dp"
+                android:layout_toRightOf="@+id/image_view_picture"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/text_view_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:text="Name Test"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/text_view_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/text_view_name"
+                    android:lines="3"
+                    android:maxLines="3"
+                    android:text="New text" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:gravity="right">
+
+                    <TextView
+                        android:id="@+id/text_view_time"
+                        style="@style/chat_timings"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginEnd="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginTop="2dp"
+                        android:text="17:10 AM"
+                        android:textColor="@color/secondary_text" />
+                </LinearLayout>
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </com.collect_up.c_up.view.chat.ChatLayoutImage>
+</RelativeLayout>

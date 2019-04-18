@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  ~ Created by Collect-up  on December 27, 2016.
+  ~
+  ~ This is the source code of C-Up v1.0
+  ~
+  ~ Copyright (c) 2016 C-Up. All rights reserved.
+  -->
+
+<RelativeLayout
+    android:id="@+id/relative_layout_container"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingBottom="5dp"
+    android:paddingRight="10dp"
+    android:paddingTop="5dp">
+
+    <com.collect_up.c_up.view.chat.ChatLayoutImage
+        android:id="@+id/bubble"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:background="@drawable/balloon_outgoing_normal"
+        android:padding="6dp">
+
+        <RelativeLayout
+            android:id="@+id/relative_layout_container_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="7dp">
+
+            <FrameLayout
+                android:id="@+id/frame_layout_download_container"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <com.github.rahatarmanahmed.cpv.CircularProgressView
+                    android:id="@+id/progress_bar_loading"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:layout_gravity="center"
+                    android:visibility="visible"
+                    app:cpv_animAutostart="true"
+                    app:cpv_indeterminate="false"
+                    app:cpv_thickness="4dp"/>
+
+                <ImageButton
+                    android:id="@+id/image_button_retry"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@null"
+                    android:layout_gravity="center"
+                    android:background="@drawable/file_download_cancel"
+                    android:tag="open"/>
+            </FrameLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_layout_name_container"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:layout_toRightOf="@+id/frame_layout_download_container"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/text_view_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:lines="1"
+                    android:maxLength="15"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:text="Name Test"
+                    android:textColor="@android:color/black"
+                    android:textSize="17sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-3dp"
+                    android:text="@string/file"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/linear_layout_name_container"
+                android:layout_gravity="bottom|right"
+                android:layout_marginBottom="3dp"
+                android:layout_toRightOf="@+id/linear_layout_name_container"
+                android:gravity="center_vertical|right">
+
+                <TextView
+                    android:id="@+id/text_view_time"
+                    style="@style/chat_timings"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginTop="2dp"
+                    android:text="17:10 AM"
+                    android:textColor="@color/secondary_text"/>
+
+                <ImageView
+                    android:id="@+id/image_view_status"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginRight="3dp"
+                    android:tint="@color/colorAccent"
+                    android:contentDescription="@null"
+                    android:src="@drawable/ic_clock"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </com.collect_up.c_up.view.chat.ChatLayoutImage>
+</RelativeLayout>

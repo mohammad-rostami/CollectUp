@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Created by Collect-up  on December 27, 2016.
+  ~
+  ~ This is the source code of C-Up v1.0
+  ~
+  ~ Copyright (c) 2016 C-Up. All rights reserved.
+  -->
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <ImageView
+            android:id="@+id/image_view_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="45dp"
+            android:contentDescription="@string/content_description_cup_logo"
+            android:src="@drawable/ic_logo_blue"/>
+
+        <TextView
+            android:id="@+id/text_view_label_activation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="50dp"
+            android:text="@string/activation_sent"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/edit_text_activation_code"
+                style="@style/AppTheme.EditText.Iconic"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="@string/hint_activation_code"
+                android:inputType="number"
+                android:maxLength="@integer/edit_text_activation_code_max_length"
+                android:singleLine="true"
+                android:textColor="@android:color/black"/>
+
+            <TextView
+                android:id="@+id/text_view_timer"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="25dp"
+                android:gravity="bottom"
+                android:text="00:00"
+                android:textColor="@color/colorAccent"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="38dp"
+            android:background="@color/colorAccent"
+            android:minWidth="221dp"
+            android:text="@string/check"
+            android:textColor="@android:color/white"/>
+    </LinearLayout>
+</ScrollView>

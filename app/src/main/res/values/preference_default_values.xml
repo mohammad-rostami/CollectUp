@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Created by Collect-up  on December 27, 2016.
+  ~
+  ~ This is the source code of C-Up v1.0
+  ~
+  ~ Copyright (c) 2016 C-Up. All rights reserved.
+  -->
+
+<resources>
+    <bool name="prefMuteChatNotifications">true</bool>
+    <bool name="prefMuteAppLike">true</bool>
+    <bool name="prefMuteAppShopLike">true</bool>
+    <bool name="prefMuteAppComplexLike">true</bool>
+    <bool name="prefMuteAppComment">true</bool>
+    <bool name="prefMuteAppShopComment">true</bool>
+    <bool name="prefMuteAppComplexComment">true</bool>
+    <bool name="prefMuteAppFollow">true</bool>
+    <bool name="prefMuteAppShopFollow">true</bool>
+    <bool name="prefMuteAppComplexFollow">true</bool>
+    <bool name="prefMuteAppRateProduct">true</bool>
+    <bool name="prefMuteAppRateShop">true</bool>
+    <bool name="prefMuteAppRateComplex">true</bool>
+    <bool name="prefMuteAppShopManager">true</bool>
+    <bool name="prefMuteAppComplexManager">true</bool>
+    <bool name="prefEnableVibrate">true</bool>
+    <bool name="prefEnableSound">true</bool>
+    <bool name="prefAccountIsPrivate">false</bool>
+    <bool name="prefMuteAppJoin">true</bool>
+    <bool name="prefPrivateMessaging">false</bool>
+
+    <!-- When you add a setting here, you must initialize it in the register fragment. -->
+    <bool name="prefShowUsername">true</bool>
+    <bool name="prefShowGender">false</bool>
+    <bool name="prefShowJob">true</bool>
+    <bool name="prefShowEmail">true</bool>
+    <bool name="prefShowPhoneNumber">false</bool>
+    <bool name="prefShowBirthday">true</bool>
+    <bool name="prefShowLocation">false</bool>
+    <bool name="prefShowLanguages">true</bool>
+    <bool name="prefShowBiography">true</bool>
+</resources>

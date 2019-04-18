@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Created by Collect-up  on December 27, 2016.
+  ~
+  ~ This is the source code of C-Up v1.0
+  ~
+  ~ Copyright (c) 2016 C-Up. All rights reserved.
+  -->
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="@dimen/bottonbar_size"
+    >
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/reuse_toolbar_fixed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"/>
+
+    <android.support.v7.widget.SearchView
+        android:id="@+id/search_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:background="@drawable/edit_text_bottom_border_accent_color"
+        android:inputType="text"
+        android:textColor="@android:color/black"
+        android:visibility="gone"
+        app:defaultQueryHint="@string/search_for_managers"
+        app:iconifiedByDefault="false"/>
+
+    <com.marshalchen.ultimaterecyclerview.UltimateRecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/layout_bottom_menu"
+        android:layout_below="@id/search_view"
+        android:layout_marginTop="?attr/actionBarSize"
+        app:recyclerviewEmptyView="@layout/empty_list_view">
+    </com.marshalchen.ultimaterecyclerview.UltimateRecyclerView>
+
+
+</RelativeLayout>

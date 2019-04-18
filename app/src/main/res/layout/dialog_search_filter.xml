@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Created by Collect-up  on December 27, 2016.
+  ~
+  ~ This is the source code of C-Up v1.0
+  ~
+  ~ Copyright (c) 2016 C-Up. All rights reserved.
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:descendantFocusability="beforeDescendants"
+              android:focusableInTouchMode="true"
+              android:orientation="vertical"
+              android:padding="@dimen/activity_padding">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  xmlns:tools="http://schemas.android.com/tools"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:background="@android:color/white"
+                  android:baselineAligned="false"
+                  android:gravity="center"
+                  android:orientation="horizontal"
+                  android:padding="6dp">
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="5dp"
+            tools:ignore="UseCompoundDrawables">
+
+            <ImageButton
+                android:id="@+id/button_product"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bottom_sheet_menu_add_product"
+                android:contentDescription="@string/content_description_add_new_product"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="@string/product"
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/text_title"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+
+            android:orientation="vertical"
+            android:padding="5dp"
+            tools:ignore="UseCompoundDrawables">
+
+            <ImageButton
+                android:id="@+id/button_shop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bottom_sheet_menu_add_shop"
+                android:contentDescription="@string/content_description_add_new_shop"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="@string/business"
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/text_title"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+
+            android:orientation="vertical"
+            android:padding="5dp"
+            tools:ignore="UseCompoundDrawables">
+
+            <ImageButton
+                android:id="@+id/button_complex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bottom_sheet_menu_add_complex"
+                android:contentDescription="@string/content_description_add_new_complex"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="@string/complex"
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/text_title"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+
+            android:orientation="vertical"
+            android:padding="5dp"
+            tools:ignore="UseCompoundDrawables">
+
+            <ImageButton
+                android:id="@+id/button_events"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bottom_sheet_menu_add_event"
+                android:contentDescription="@string/content_description_add_new_event"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="@string/event"
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/text_title"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <android.support.design.widget.TextInputLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="wrap_content"
+                                                   android:layout_marginTop="5dp"
+                                                   android:textColorHint="@color/text_color_hint">
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/txtSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_search"
+            android:inputType="text"
+            android:textColorHint="@color/primary_text"/>
+    </android.support.design.widget.TextInputLayout>
+
+
+    <!--<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.rey.material.widget.Button
+            android:id="@+id/button_product"
+            style="@style/Material.Drawable.Ripple.Touch"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/button_default"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:text="@string/product"
+            android:textColor="@color/button_color"
+            android:textSize="14sp"
+            app:rd_backgroundColor="@android:color/white"
+            app:rd_cornerRadius="5dp"
+            app:rd_enable="true"
+            app:rd_rippleColor="@color/accent" />
+
+        <com.rey.material.widget.Button
+            android:id="@+id/button_shop"
+            style="@style/Material.Drawable.Ripple.Touch"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/button_default"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:text="@string/shop"
+            android:textColor="@color/button_color"
+            android:textSize="14sp"
+            app:rd_backgroundColor="@android:color/white"
+            app:rd_cornerRadius="5dp"
+            app:rd_enable="true"
+            app:rd_rippleColor="@color/accent" />
+
+        <com.rey.material.widget.Button
+            android:id="@+id/button_complex"
+            style="@style/Material.Drawable.Ripple.Touch"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/button_default"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:text="@string/complex"
+            android:textColor="@color/button_color"
+            android:textSize="14sp"
+            app:rd_backgroundColor="@android:color/white"
+            app:rd_cornerRadius="5dp"
+            app:rd_enable="true"
+            app:rd_rippleColor="@color/accent" />
+    </LinearLayout>-->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/filter_by"
+        android:textColor="@color/secondary_text"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <com.rey.material.widget.RadioButton
+            android:id="@+id/radio_none"
+            style="@style/Material.Drawable.RadioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left|center"
+            android:text="@string/none"
+            android:textSize="@dimen/text_title"
+            android:visibility="visible"
+            app:rbd_strokeColor="@color/accent"/>
+
+        <com.rey.material.widget.RadioButton
+            android:id="@+id/radio_nearest"
+            style="@style/Material.Drawable.RadioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left|center"
+            android:text="@string/nearest"
+            android:textSize="@dimen/text_title"
+            android:visibility="visible"
+            app:rbd_strokeColor="@color/accent"/>
+
+        <com.rey.material.widget.RadioButton
+            android:id="@+id/radio_top_rate"
+            style="@style/Material.Drawable.RadioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left|center"
+            android:text="@string/top_rate"
+            android:textSize="@dimen/text_title"
+            android:visibility="visible"
+            app:rbd_strokeColor="@color/accent"/>
+
+        <com.rey.material.widget.RadioButton
+            android:id="@+id/radio_top_view"
+            style="@style/Material.Drawable.RadioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left|center"
+            android:text="@string/top_view"
+            android:textSize="@dimen/text_title"
+            android:visibility="visible"
+            app:rbd_strokeColor="@color/accent"/>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/pick_location"
+        android:textColor="@color/secondary_text"
+        android:textStyle="bold"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/button_select_location"
+            style="@style/Material.Drawable.Ripple.Touch"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:background="@null"
+            android:contentDescription="@null"
+            android:src="@drawable/ic_map_marker_accent"
+            android:textSize="14sp"
+            android:tint="@color/colorAccent"/>
+
+        <TextView
+            android:id="@+id/text_view_location_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/button_select_location"
+            android:text="@string/unknown"
+            android:textColor="@color/primary_text"/>
+
+    </RelativeLayout>
+</LinearLayout>

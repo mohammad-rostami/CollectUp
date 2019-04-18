@@ -1,0 +1,66 @@
+<!--
+  ~ Created by Collect-up  on December 27, 2016.
+  ~
+  ~ This is the source code of C-Up v1.0
+  ~
+  ~ Copyright (c) 2016 C-Up. All rights reserved.
+  -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/bottonbar_size"
+                tools:context=".fragments.FragmentGroupChatInit">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:padding="@dimen/activity_padding">
+
+            <com.collect_up.c_up.view.RectangleNetworkImageView
+                android:id="@+id/image_view_picture"
+                android:layout_width="54dp"
+                android:layout_height="54dp"
+                android:background="@drawable/take_picture_chat_group"
+                android:contentDescription="@null"
+                android:tag=""/>
+
+            <EditText
+                android:id="@+id/edit_text_group_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:hint="@string/hint_enter_group_name"
+                android:inputType="text"
+                android:minHeight="30dp"
+                android:singleLine="true"
+                android:textColor="@android:color/black"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/text_view_members_count"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/bottom_sheet_item_pressed"
+            android:padding="7dp"
+            android:text="1 member"/>
+
+        <com.marshalchen.ultimaterecyclerview.UltimateRecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:recyclerviewEmptyView="@layout/empty_list_view"></com.marshalchen.ultimaterecyclerview.UltimateRecyclerView>
+
+    </LinearLayout>
+
+</RelativeLayout>

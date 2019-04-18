@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Created by Collect-up  on December 27, 2016.
+  ~
+  ~ This is the source code of C-Up v1.0
+  ~
+  ~ Copyright (c) 2016 C-Up. All rights reserved.
+  -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/relative_layout_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="14dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="14dp">
+
+    <com.collect_up.c_up.util.ComplexAvatarView
+        android:id="@+id/image_view_picture"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        app:cav_textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+        app:cav_textColor="@android:color/white"
+        app:cav_textSize="20sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_toLeftOf="@+id/checkbox_select"
+        android:layout_toRightOf="@+id/image_view_picture"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text_view_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="17dp"
+            android:layout_marginStart="17dp"
+            android:gravity="left"
+            android:text="New Text"
+            android:textColor="@android:color/black"/>
+
+        <TextView
+            android:id="@+id/text_view_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="17dp"
+            android:layout_marginStart="17dp"
+            android:gravity="left"
+            android:text="New Text"
+            android:textColor="@color/divider"
+            android:textSize="12sp"/>
+    </LinearLayout>
+
+    <com.rey.material.widget.CheckBox
+        android:id="@+id/checkbox_select"
+        style="@style/Material.Drawable.CheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="9dp"
+        app:cbd_strokeColor="@color/accent"/>
+
+    <ImageView
+        android:id="@+id/imgOfficial"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/checkbox_select"
+        android:layout_marginLeft="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="-10dp"
+        android:src="@drawable/official_logo"/>
+</RelativeLayout>

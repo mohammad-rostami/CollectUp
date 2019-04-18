@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/ucrop_color_crop_background"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabs"
+            android:background="#000"
+            app:tabTextColor="#ddd"
+            app:tabMode="fixed"
+            app:tabGravity="fill"
+            app:tabSelectedTextColor="#fff"
+            app:tabIndicatorColor="#fff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/tabPager"
+        android:layout_below="@id/app_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/limitLayout"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/ucrop_bottom_background_shadow"
+        android:layout_height="60dp"
+        android:layout_width="match_parent">
+
+        <TextView
+            android:id="@+id/limitText"
+            android:layout_margin="10dp"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:gravity="center_vertical"
+            android:textColor="#ff5722"
+            android:text="Selected"
+            android:textSize="16sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</RelativeLayout>

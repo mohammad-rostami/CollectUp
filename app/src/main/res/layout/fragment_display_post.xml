@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Created by Collect-up  on December 27, 2016.
+  ~
+  ~ This is the source code of C-Up v1.0
+  ~
+  ~ Copyright (c) 2016 C-Up. All rights reserved.
+  -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relative_layout_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/frameHolder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/default_white">
+
+        <com.marshalchen.ultimaterecyclerview.UltimateRecyclerView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/linear_layout_send_comment_container"
+            android:layout_marginBottom="45dp"
+            app:recyclerviewEmptyView="@layout/empty_list_view" />
+
+        <fragment xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/fragmentSuggestionlist"
+            android:name="com.collect_up.c_up.fragments.FragmentMention"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="45dp"
+            android:background="@color/dialog_background"
+            android:visibility="gone"
+            tools:layout="@layout/fragment_tabs" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_layout_send_comment_container"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/default_white"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/divider" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom"
+            android:orientation="horizontal">
+
+            <com.collect_up.c_up.view.CustomEditText
+                android:id="@+id/edit_text_comment"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@+id/image_button_post_comment"
+                android:layout_weight="1"
+                android:background="@null"
+                android:ems="10"
+                android:hint="@string/hint_type_comment"
+                android:inputType="textMultiLine"
+                android:maxLines="4"
+                android:minHeight="53dp"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                android:singleLine="false"
+                android:textColor="@android:color/black" />
+
+            <ImageButton
+                android:id="@+id/image_button_post_comment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@null"
+                android:contentDescription="@string/content_description_post_comment"
+                android:minHeight="53dp"
+                android:padding="15dp"
+                android:src="@drawable/ic_chat_send_active"
+                android:tint="@color/colorAccent" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

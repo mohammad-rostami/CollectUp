@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Created by Collect-up  on December 27, 2016.
+  ~
+  ~ This is the source code of C-Up v1.0
+  ~
+  ~ Copyright (c) 2016 C-Up. All rights reserved.
+  -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/frameLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/bottonbar_size"
+                tools:context=".fragments.FragmentFollowAndDeny">
+
+    <!-- <include
+         android:id="@+id/toolbar"
+         layout="@layout/reuse_toolbar_fixed"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_alignParentTop="true"/>
+ -->
+    <LinearLayout
+        android:id="@+id/btn_invite"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+        android:padding="@dimen/activity_padding">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="2dp"
+            android:src="@drawable/ic_account_plus"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical|right"
+            android:text="@string/invite_friends"
+            android:textColor="#000000"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="start|center_vertical"
+            android:paddingLeft="10dp"
+            android:text=""
+            android:textColor="#000000"
+            android:textSize="15sp"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtContact"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_below="@+id/btn_invite"
+        android:background="#e1e1e1"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:text="@string/contacts"
+        android:textAllCaps="true"
+        android:textColor="@color/secondary_text"
+        android:textSize="12sp"
+        android:textStyle="bold"/>
+
+    <com.marshalchen.ultimaterecyclerview.UltimateRecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtContact"
+        app:recyclerviewEmptyView="@layout/empty_list_view"></com.marshalchen.ultimaterecyclerview.UltimateRecyclerView>
+
+    <!-- <include
+         android:id="@+id/layout_bottom_menu"
+         layout="@layout/reuse_bottom_menu"
+         android:layout_width="match_parent"
+         android:layout_height="@dimen/bottonbar_size"
+         android:layout_alignParentBottom="true" />-->
+</RelativeLayout>

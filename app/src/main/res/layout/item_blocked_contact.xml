@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Created by Collect-up  on December 27, 2016.
+  ~
+  ~ This is the source code of C-Up v1.0
+  ~
+  ~ Copyright (c) 2016 C-Up. All rights reserved.
+  -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relative_layout_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="14dp"
+    android:paddingLeft="@dimen/activity_padding"
+    android:paddingRight="@dimen/activity_padding"
+    android:paddingTop="14dp">
+
+    <com.collect_up.c_up.view.CircledNetworkImageView
+        android:id="@+id/image_view_picture"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:contentDescription="@null"
+        android:src="@drawable/placeholder" />
+
+    <TextView
+        android:id="@+id/text_view_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="17dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@+id/image_view_picture"
+        android:layout_toRightOf="@+id/image_view_picture"
+        android:text="New Text"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium" />
+</RelativeLayout>

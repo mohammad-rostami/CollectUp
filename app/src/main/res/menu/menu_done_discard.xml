@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Created by Collect-up  on December 27, 2016.
+  ~
+  ~ This is the source code of C-Up v1.0
+  ~
+  ~ Copyright (c) 2016 C-Up. All rights reserved.
+  -->
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!--to take effect, the activity must have specific theme-->
+    <item
+        android:id="@+id/action_search"
+        android:icon="@drawable/ic_search_white"
+        android:title="@string/action_search"
+        app:actionViewClass="android.widget.SearchView"
+        app:showAsAction="collapseActionView|ifRoom"/>
+    <item
+        android:id="@+id/action_done"
+        android:icon="@drawable/ic_done_white"
+        android:title="@string/action_done"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/menu_loader"
+        android:enabled="false"
+        android:icon="@drawable/ucrop_vector_loader_animated"
+        android:title=""
+        android:visible="false"
+        app:showAsAction="ifRoom"/>
+
+</menu>

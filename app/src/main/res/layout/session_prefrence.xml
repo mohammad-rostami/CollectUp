@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal"
+              android:padding="15dp">
+
+    <LinearLayout
+        android:id="@+id/platformRoot"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtPlatform"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="Platform"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/text_desc"
+            android:textStyle="bold"/>
+
+
+        <TextView
+            android:id="@+id/txtDevice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtPlatform"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:text="Device Name"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/text_desc"/>
+
+        <TextView
+            android:id="@+id/txtIp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtDevice"
+            android:text="IP Address"
+            android:textSize="@dimen/text_desc"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtLastOnline"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="Last Online"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/text_desc"/>
+
+</LinearLayout>

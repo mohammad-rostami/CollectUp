@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Created by Collect-up  on December 27, 2016.
+  ~
+  ~ This is the source code of C-Up v1.0
+  ~
+  ~ Copyright (c) 2016 C-Up. All rights reserved.
+  -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="14dp"
+                android:paddingLeft="@dimen/activity_padding"
+                android:paddingRight="@dimen/activity_padding"
+                android:paddingTop="14dp">
+
+    <com.collect_up.c_up.view.RectangleNetworkImageView
+        android:id="@+id/image_view_picture"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:contentDescription="@null"
+        android:src="@drawable/placeholder"/>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="17dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="5dp"
+        android:layout_toEndOf="@+id/image_view_picture"
+        android:layout_toLeftOf="@+id/radio_button_select"
+        android:layout_toRightOf="@+id/image_view_picture"
+        android:layout_toStartOf="@+id/radio_button_select"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text_view_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="New Text"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"/>
+
+        <TextView
+            android:id="@+id/text_view_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Unknown"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+    <com.rey.material.widget.Button
+        android:id="@+id/btnRequested"
+        style="@style/Material.Drawable.Ripple.Touch"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/divider"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp"
+        android:text="@string/requested"
+        android:textAllCaps="false"
+        android:textColor="@color/button_color"
+        android:textSize="13sp"
+        android:visibility="gone"
+        app:rd_cornerRadius="5dp"
+        app:rd_enable="true"
+        app:rd_rippleColor="@color/accent"/>
+
+
+    <com.rey.material.widget.RadioButton
+        android:id="@+id/radio_button_select"
+        style="@style/Material.Drawable.RadioButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/linearLayout3"
+        android:layout_centerVertical="true"
+        android:visibility="visible"
+        app:rbd_strokeColor="@color/accent"/>
+
+    <ImageView
+        android:id="@+id/imgBusinessLevel"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/radio_button_select"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="-10dp"
+        android:src="@drawable/businesslevel_gold"/>
+</RelativeLayout>

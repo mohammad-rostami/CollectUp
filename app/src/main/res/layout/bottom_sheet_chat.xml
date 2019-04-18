@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Created by Collect-up  on December 27, 2016.
+  ~
+  ~ This is the source code of C-Up v1.0
+  ~
+  ~ Copyright (c) 2016 C-Up. All rights reserved.
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:baselineAligned="false"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="6dp">
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:scrollbars="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <ImageButton
+                    android:id="@+id/btnForward"
+                    android:layout_width="52dp"
+                    android:layout_height="52dp"
+                    android:background="@null"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_forward" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/forward"
+                    android:textColor="@color/divider" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/copyLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <ImageButton
+                    android:id="@+id/btnCopy"
+                    android:layout_width="52dp"
+                    android:layout_height="52dp"
+                    android:background="@null"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_content_copy" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/copy"
+                    android:textColor="@color/divider" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <ImageButton
+                    android:id="@+id/btnDelete"
+                    android:layout_width="52dp"
+                    android:layout_height="52dp"
+                    android:background="@null"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_delete" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/delete"
+                    android:textColor="@color/divider" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <ImageButton
+                    android:id="@+id/btnRetry"
+                    android:layout_width="52dp"
+                    android:layout_height="52dp"
+                    android:background="@null"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_refresh" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/retry"
+                    android:textColor="@color/divider" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </HorizontalScrollView>
+</LinearLayout>

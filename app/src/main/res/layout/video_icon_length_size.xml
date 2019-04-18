@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Created by Collect-up  on December 27, 2016.
+  ~
+  ~ This is the source code of C-Up v1.0
+  ~
+  ~ Copyright (c) 2016 C-Up. All rights reserved.
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_gravity="bottom|left"
+              android:orientation="horizontal">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_gravity="bottom|left"
+                  android:background="@drawable/corner_radius"
+                  android:gravity="center_vertical"
+                  android:orientation="horizontal"
+                  android:layout_marginBottom="6dp"
+                  android:padding="5dp">
+
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:contentDescription="@null"
+            android:src="@drawable/ic_videocam"/>
+
+        <TextView
+            android:id="@+id/text_view_file_length"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:layout_marginStart="6dp"
+            android:text="14:56"
+            android:textSize="10sp"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:id="@+id/text_view_file_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:text="16MB"
+            android:textSize="10sp"
+            android:textColor="@android:color/white"/>
+    </LinearLayout>
+</LinearLayout>

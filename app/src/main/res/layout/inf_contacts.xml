@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Created by Collect-up  on December 27, 2016.
+  ~
+  ~ This is the source code of C-Up v1.0
+  ~
+  ~ Copyright (c) 2016 C-Up. All rights reserved.
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:id="@+id/relative_layout_container"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal"
+              android:paddingBottom="14dp"
+              android:paddingLeft="@dimen/activity_padding"
+              android:paddingRight="@dimen/activity_padding"
+              android:paddingTop="14dp">
+
+    <com.collect_up.c_up.util.ComplexAvatarView
+        android:id="@+id/image_view_picture"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        app:cav_textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+        app:cav_textColor="@android:color/white"
+        app:cav_textSize="20sp">
+
+    </com.collect_up.c_up.util.ComplexAvatarView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text_view_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="17dp"
+            android:layout_marginStart="17dp"
+            android:gravity="left"
+            android:text="New Text"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColor="@color/primary_text"/>
+
+        <TextView
+            android:id="@+id/text_view_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="17dp"
+            android:layout_marginStart="17dp"
+            android:gravity="left"
+            android:text="New Text"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColor="@color/secondary_text"/>
+    </LinearLayout>
+</LinearLayout>
